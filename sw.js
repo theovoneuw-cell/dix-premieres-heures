@@ -1,8 +1,11 @@
-// Tout le contenu tient dans index.html (polices comprises, en base64).
+// Deux volets + une feuille de style qui contient les polices en base64.
 // Stratégie : cache d'abord, réseau ensuite. L'app fonctionne en avion.
-const CACHE = 'dix-heures-v2';
+// ⚠ Incrémenter CACHE à chaque modification de contenu, sinon les appareils
+//   où la PWA est déjà installée continuent de servir l'ancienne version.
+const CACHE = 'guitare-v3';
 const ASSETS = [
-  './', './index.html', './manifest.webmanifest',
+  './', './index.html', './intermediaire.html',
+  './assets.css', './app.js', './manifest.webmanifest',
   './icons/apple-touch-icon.png', './icons/icon-192.png',
   './icons/icon-512.png', './icons/favicon-32.png'
 ];

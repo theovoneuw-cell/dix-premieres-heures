@@ -5,16 +5,16 @@ func c(_ hex: UInt32) -> CGColor {
     CGColor(red: CGFloat((hex >> 16) & 0xFF)/255, green: CGFloat((hex >> 8) & 0xFF)/255,
             blue: CGFloat(hex & 0xFF)/255, alpha: 1)
 }
-let vert   = c(0x1E5B3D)
-let creme  = c(0xFBFAF3)
-let laiton = c(0xD2A748)
+let fond   = c(0x1F5A6B)   // pétrole : couleur du volet débutant
+let cordes = c(0xF2F2EF)   // papier
+let repere = c(0xC4553C)   // brique : couleur du volet intermédiaire
 
 func draw(_ s: CGFloat, _ path: String) {
     let ctx = CGContext(data: nil, width: Int(s), height: Int(s), bitsPerComponent: 8,
                         bytesPerRow: 0, space: CGColorSpaceCreateDeviceRGB(),
                         bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue)!
     ctx.setShouldAntialias(true)
-    ctx.setFillColor(vert); ctx.fill(CGRect(x: 0, y: 0, width: s, height: s))
+    ctx.setFillColor(fond); ctx.fill(CGRect(x: 0, y: 0, width: s, height: s))
 
     // --- frettes : espacement décroissant vers le haut, c'est la signature d'un manche ---
     // y mesuré depuis le bas ; les cases se resserrent en montant
@@ -25,7 +25,7 @@ func draw(_ s: CGFloat, _ path: String) {
     let inset = s * 0.175
     let gap   = (s - inset * 2) / 5
     let jauges: [CGFloat] = [0.0150, 0.0128, 0.0107, 0.0088, 0.0072, 0.0060]
-    ctx.setFillColor(creme)
+    ctx.setFillColor(cordes)
     for i in 0..<6 {
         let w = s * jauges[i]
         ctx.fill(CGRect(x: inset + gap * CGFloat(i) - w/2, y: 0, width: w, height: s))
@@ -37,7 +37,7 @@ func draw(_ s: CGFloat, _ path: String) {
     // --- repère de case, centré dans la case la plus large ---
     let cy = (fretY[1] + fretY[2]) / 2
     let r  = s * 0.088
-    ctx.setFillColor(laiton)
+    ctx.setFillColor(repere)
     ctx.fillEllipse(in: CGRect(x: s/2 - r, y: cy - r, width: r*2, height: r*2))
 
     let rep = NSBitmapImageRep(cgImage: ctx.makeImage()!)
