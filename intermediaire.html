@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Les dix heures suivantes</title>
-<meta name="description" content="Dix séances d'une heure pour un guitariste qui a passé le stade débutant : notes du manche, positions de gamme, blues en sixtes, mi 7 dièse 9 et improvisation.">
+<meta name="description" content="Dix séances d'une heure pour un guitariste qui a passé le stade débutant : notes du manche, positions de gamme, blues en sixtes, E7♯9 et improvisation.">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
@@ -12,10 +12,10 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Guitare">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="theme-color" content="#F2F2EF" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#101215" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F4F8F6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B1210" media="(prefers-color-scheme: dark)">
 <meta property="og:title" content="Les dix heures suivantes">
-<meta property="og:description" content="Dix séances d'une heure pour un guitariste qui a passé le stade débutant : notes du manche, positions de gamme, blues en sixtes, mi 7 dièse 9 et improvisation.">
+<meta property="og:description" content="Dix séances d'une heure pour un guitariste qui a passé le stade débutant : notes du manche, positions de gamme, blues en sixtes, E7♯9 et improvisation.">
 <link rel="stylesheet" href="assets.css">
 </head>
 <body>
@@ -31,7 +31,7 @@
   </div>
 </header>
 <div class="mast-strip"><div class="wrap"><div class="cell"><b>Pour qui</b>Un élève qui a fini le premier volet, ou qui joue depuis six mois à deux ans sans avoir jamais nommé une note.</div><div class="cell"><b>Ce qui change</b>Le travail à la maison devient le moteur. Une séance peut tenir sur deux ou trois cours.</div><div class="cell"><b>D'où ça vient</b>De feuilles de cours manuscrites et de deux partitions de travail. Le détail est plus bas.</div></div></div>
-<nav class="nav" aria-label="Séances"><div class="wrap"><span class="navlabel">Sommaire</span><a href="#avant">Avant</a>
+<nav class="nav" aria-label="Séances"><div class="wrap"><span class="navlabel">Sommaire</span><a href="#notes">Notes &amp; accords</a><a href="#avant">Avant</a>
 <a href="#i1">I</a>
 <a href="#i2">II</a>
 <a href="#i3">III</a>
@@ -44,6 +44,80 @@
 <a href="#i10">X</a>
 <a href="#recap">Récap</a></div></nav>
 <main>
+<section class="reference" id="notes">
+ <div class="wrap">
+  <div class="feuille">
+   <div class="f-cut"><span>à détacher</span></div>
+   <div class="f-head"><span class="f-lab">À envoyer avant le premier cours</span>
+    <span class="f-t">Notes et accords — la correspondance</span>
+    <button class="f-print" type="button">Exporter cette feuille en PDF</button></div>
+   <div class="f-cols">
+    <div class="f-col">
+     <h5>Les sept notes</h5>
+     <pre class="tab">français   Do  Ré  Mi  Fa  Sol  La  Si
+anglais     C   D   E   F   G    A   B</pre>
+     <p class="cap">Do commence à C, puis on avance dans l'alphabet. Il n'y a rien d'autre à retenir.</p>
+     <h5>Les altérations</h5>
+     <pre class="tab">Do♯ = C♯      Ré♭ = D♭
+Ré♯ = D♯      Mi♭ = E♭
+Fa♯ = F♯      Sol♭ = G♭
+Sol♯ = G♯     La♭ = A♭
+La♯ = A♯      Si♭ = B♭</pre>
+     <p class="cap">♯ dièse : une case plus haut. ♭ bémol : une case plus bas. La même case porte les deux noms.</p>
+     <p class="cap"><b>Attention :</b> entre Mi et Fa, et entre Si et Do, il n'y a pas de case intermédiaire. Ce sont les deux seuls endroits.</p>
+    </div>
+    <div class="f-col">
+     <h5>Les six cordes à vide</h5>
+     <pre class="tab">6e  la plus grosse   Mi    E
+5e                   La    A
+4e                   Ré    D
+3e                   Sol   G
+2e                   Si    B
+1re la plus fine     Mi    E</pre>
+     <h5>Comment se dit un nom d'accord</h5>
+     <pre class="tab">écrit       on dit
+C           « do »
+Cm          « do mineur »
+C7          « do sept »
+Cmaj7       « do majeur sept »
+Csus4       « do sus quatre »
+Cadd9       « do add neuf »
+C6          « do six »
+E7♯9        « mi sept dièse neuf »
+C♯          « do dièse »
+D♭          « ré bémol »</pre>
+     <p class="cap">La lettre donne la note de départ, ce qui suit décrit la couleur de l'accord. Une lettre seule veut toujours dire majeur.</p>
+     <p class="cap"><b>On écrit la lettre anglaise, on dit la note française.</b> Tout le monde écrit C7 et dit « do sept ». À l'oral on abrège : « sept », pas « septième ».</p>
+    </div>
+    <div class="f-col">
+     <h5>Tous les accords des vingt séances</h5>
+     <pre class="tab">Em      Mi mineur
+Am      La mineur
+Dm      Ré mineur
+Bm      Si mineur
+
+C       Do majeur
+D       Ré majeur
+E       Mi majeur
+G       Sol majeur
+A       La majeur
+F       Fa majeur
+
+A7      La septième
+D7      Ré septième
+E7      Mi septième
+Cadd9   Do add9
+
+A6 G6   La et Sol sixte
+D6 C6   Ré et Do sixte
+E6      Mi sixte
+E7♯9    Mi septième dièse neuf</pre>
+     <div class="devoir">Sur tout le site, <b>les accords sont écrits en lettres</b>, comme sur les tablatures que tu trouveras partout. <b>Les notes et les cordes restent en français.</b> C'est la seule convention à connaître, et c'est celle de la quasi-totalité des guitaristes.</div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
 <section class="intro" id="avant">
  <div class="wrap">
   <div class="lede-bloc">
@@ -72,7 +146,7 @@
         <li>Une séance peut prendre deux ou trois cours. C'est normal, et c'est même souhaitable sur les séances IV et V.</li>
         <li>Le travail à la maison devient le vrai moteur. Sans cinq minutes quotidiennes de métronome, la séance IV ne sert à rien.</li>
         <li>On chronomètre toujours, mais on chronomètre autre chose : un tempo, un nombre d'arrêts, un nombre de cordes qui sonnent.</li>
-        <li>L'électrique devient utile. Sur folk tout reste jouable, sauf le mi 7 ♯9 qui sonne dur.</li>
+        <li>L'électrique devient utile. Sur folk tout reste jouable, sauf E7♯9 qui sonne dur.</li>
       </ul>
     </div>
   </div>
@@ -83,14 +157,14 @@
       <h4>Les feuilles de cours</h4>
       <ul>
         <li>La feuille manuscrite de théorie : structure ton / demi-ton de la gamme, dièses et bémols, et les positions de pentatonique reliées aux cases V, VIII et XII. Elle donne les séances I, II et X.</li>
-        <li>La feuille de tablatures : pentatonique de la mineur, gamme blues, grille de « Hey Joe », et l'exercice chromatique de main droite noté « mouvement perpétuel ». Elle donne les séances III, IV et VII.</li>
+        <li>La feuille de tablatures : pentatonique de La mineur, gamme blues, grille de « Hey Joe », et l'exercice chromatique de main droite noté « mouvement perpétuel ». Elle donne les séances III, IV et VII.</li>
       </ul>
     </div>
     <div class="p-col">
       <h4>Les partitions de travail</h4>
       <ul>
         <li>L'arrangement de blues en accords de sixte, ♩=100 en shuffle, avec sa basse qui marche et son turnaround. Il donne les séances V et VI.</li>
-        <li>La transcription de « Purple Haze » : accord de mi 7 ♯9, slides, quarts de ton, bends, harmoniques pincées, et la grille du solo notée à la main en bas de page. Elle donne les séances VIII et IX.</li>
+        <li>La transcription de « Purple Haze » : accord E7♯9, slides, quarts de ton, bends, harmoniques pincées, et la grille du solo notée à la main en bas de page. Elle donne les séances VIII et IX.</li>
         <li><em>Les tablatures de ces deux partitions ne sont pas reproduites ici : elles sont protégées. Ce volet en enseigne les techniques avec ses propres exercices, et donne les grilles d'accords, qui ne le sont pas.</em></li>
       </ul>
     </div>
@@ -113,22 +187,22 @@
    </div>
    <div class="etape" data-type="jeu" data-dur="9" style="--dur:9">
     <div class="tick"><span>10</span></div>
-    <div class="corps"><h4>Tons et demi-tons</h4><p>Do–Ré 1 ton, Ré–Mi 1 ton, Mi–Fa un demi-ton, puis 1, 1, 1, et Si–Do un demi-ton. Un demi-ton, c'est une case, un ton deux cases. Il les joue sur la corde de mi grave en montant, et il annonce chaque écart à voix haute.</p></div>
+    <div class="corps"><h4>Tons et demi-tons</h4><p>Do–Ré 1 ton, Ré–Mi 1 ton, Mi–Fa un demi-ton, puis 1, 1, 1, et Si–Do un demi-ton. Un demi-ton, c'est une case, un ton deux cases. Il les joue sur la corde de Mi grave en montant, et il annonce chaque écart à voix haute.</p></div>
     <div class="marge"><div class="note"><b>Il oublie Mi–Fa et Si–Do</b>Ce sont les deux seuls endroits où deux notes voisines se touchent. Fais-lui montrer sur le manche : entre Mi et Fa il n'y a rien à sauter.</div><div class="note"><b>Il confond dièse et bémol</b>Même case, deux noms. Fa♯ et Sol♭ sont la même frette. Lequel on écrit dépend du morceau, pas du son.</div></div>
    </div>
    <div class="etape" data-type="jeu" data-dur="15" style="--dur:15">
     <div class="tick"><span>19</span></div>
-    <div class="corps"><h4>Les notes de la corde de mi grave</h4><p>Case 0 mi, 1 fa, 3 sol, 5 la, 7 si, 8 do, 10 ré, 12 mi. Il les nomme à voix haute en jouant, du sillet à la douzième.</p></div>
+    <div class="corps"><h4>Les notes de la corde de Mi grave</h4><p>Case 0 Mi, 1 Fa, 3 Sol, 5 La, 7 Si, 8 Do, 10 Ré, 12 Mi. Il les nomme à voix haute en jouant, du sillet à la douzième.</p></div>
     <div class="marge"><div class="note"><b>Il récite au lieu de trouver</b>Interroge-le dans le désordre : « où est le do ? » Puis « un autre do ». Réciter la suite ne sert à rien en situation.</div></div>
    </div>
    <div class="etape" data-type="jeu" data-dur="11" style="--dur:11">
     <div class="tick"><span>34</span></div>
-    <div class="corps"><h4>La même chose sur la corde de la</h4><p>Case 0 la, 2 si, 3 do, 5 ré, 7 mi, 8 fa, 10 sol, 12 la. Ces deux cordes suffisent : ce sont celles qui portent les fondamentales des barrés.</p></div>
+    <div class="corps"><h4>La même chose sur la corde de La</h4><p>Case 0 La, 2 Si, 3 Do, 5 Ré, 7 Mi, 8 Fa, 10 Sol, 12 La. Ces deux cordes suffisent : ce sont celles qui portent les fondamentales des barrés.</p></div>
     <div class="marge"></div>
    </div>
    <div class="etape" data-type="morceau" data-dur="11" style="--dur:11">
     <div class="tick"><span>45</span></div>
-    <div class="corps"><h4>On s'en sert tout de suite</h4><p>Tu annonces un accord, il pose le barré au bon endroit. Fa, Sol, Si♭, Ré. Forme de mi puis forme de la. C'est là qu'il comprend à quoi ça sert.</p></div>
+    <div class="corps"><h4>On s'en sert tout de suite</h4><p>Tu annonces un accord, il pose le barré au bon endroit. F, G, B♭, D. Forme de E puis forme de A. C'est là qu'il comprend à quoi ça sert.</p></div>
     <div class="marge"><div class="note"><b>Il cherche trois secondes à chaque fois</b>C'est le but de la semaine. Trois secondes aujourd'hui, une dans quinze jours.</div></div>
    </div>
    <div class="etape" data-type="cadre" data-dur="4" style="--dur:4">
@@ -144,11 +218,11 @@
    <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Séance I — les notes sur le manche</span><button class="f-print" type="button">Exporter cette feuille en PDF</button></div>
    <div class="f-cols"><div class="f-col"><h5>La gamme de do</h5><pre class="tab">DO   RÉ   MI  FA   SOL  LA   SI  DO
  C    D    E   F    G    A    B   C
-  1t   1t  ½t   1t   1t   1t  ½t</pre><p class="cap">½ ton = 1 case. 1 ton = 2 cases. Les deux demi-tons naturels sont Mi–Fa et Si–Do : c'est tout ce qu'il y a à retenir.</p></div><div class="f-col"><h5>Corde de mi grave (6<sup>e</sup>)</h5><pre class="tab">case  0  1  3  5  7  8 10 12
+  1t   1t  ½t   1t   1t   1t  ½t</pre><p class="cap">½ ton = 1 case. 1 ton = 2 cases. Les deux demi-tons naturels sont Mi–Fa et Si–Do : c'est tout ce qu'il y a à retenir.</p></div><div class="f-col"><h5>Corde de Mi grave (6<sup>e</sup>)</h5><pre class="tab">case  0  1  3  5  7  8 10 12
 note  MI FA SOL LA SI DO RÉ MI
-       E  F  G  A  B  C  D  E</pre><h5>Corde de la (5<sup>e</sup>)</h5><pre class="tab">case  0  2  3  5  7  8 10 12
+       E  F  G  A  B  C  D  E</pre><h5>Corde de La (5<sup>e</sup>)</h5><pre class="tab">case  0  2  3  5  7  8 10 12
 note  LA SI DO RÉ MI FA SOL LA
-       A  B  C  D  E  F  G  A</pre></div><div class="f-col"><h5>À la maison</h5><div class="devoir"><b>Deux minutes par jour, pas plus.</b><br><br><b>1.</b> Une note au hasard, tu la trouves sur mi grave <b>et</b> sur la.<br><b>2.</b> Les barrés : je dis « sol », tu poses la forme de mi case 3.<br><b>3.</b> Le piège : Mi–Fa et Si–Do se touchent. Aucune case entre les deux.</div></div></div>
+       A  B  C  D  E  F  G  A</pre></div><div class="f-col"><h5>À la maison</h5><div class="devoir"><b>Deux minutes par jour, pas plus.</b><br><br><b>1.</b> Une note au hasard, tu la trouves sur mi grave <b>et</b> sur la.<br><b>2.</b> Les barrés : je dis « G », tu poses la forme de E case 3.<br><b>3.</b> Le piège : Mi–Fa et Si–Do se touchent. Aucune case entre les deux.</div></div></div>
   </div>
  </div>
 </section>
@@ -158,17 +232,17 @@ note  LA SI DO RÉ MI FA SOL LA
   <div class="heure">
    <div class="etape" data-type="cadre" data-dur="4" style="--dur:4">
     <div class="tick"><span>0</span></div>
-    <div class="corps"><h4>Accordage, la boîte qu'il connaît</h4><p>La pentatonique de la mineur, case 5. Montée-descente au métronome, pour voir où elle en est.</p></div>
+    <div class="corps"><h4>Accordage, la boîte qu'il connaît</h4><p>La pentatonique de La mineur, case 5. Montée-descente au métronome, pour voir où elle en est.</p></div>
     <div class="marge"></div>
    </div>
    <div class="etape" data-type="montre" data-dur="8" style="--dur:8">
     <div class="tick"><span>4</span></div>
-    <div class="corps"><h4>Cinq notes, tout le manche</h4><p>La, do, ré, mi, sol. Ces cinq notes-là et pas d'autres, de la case 0 à la case 15. Les « positions » ne sont que des façons de les attraper avec quatre doigts.</p></div>
-    <div class="marge"><div class="note"><b>Il croit que chaque position est une gamme différente</b>C'est le contresens le plus fréquent. Fais-lui jouer un la case 5 sur mi grave, puis le même la case 12 sur la corde de la. Même note, deux endroits.</div></div>
+    <div class="corps"><h4>Cinq notes, tout le manche</h4><p>La, Do, Ré, Mi, Sol. Ces cinq notes-là et pas d'autres, de la case 0 à la case 15. Les « positions » ne sont que des façons de les attraper avec quatre doigts.</p></div>
+    <div class="marge"><div class="note"><b>Il croit que chaque position est une gamme différente</b>C'est le contresens le plus fréquent. Fais-lui jouer un la case 5 sur mi grave, puis le même la case 12 sur la corde de La. Même note, deux endroits.</div></div>
    </div>
    <div class="etape" data-type="jeu" data-dur="13" style="--dur:13">
     <div class="tick"><span>12</span></div>
-    <div class="corps"><h4>La deuxième position, case 8</h4><p>Elle démarre sur le do, case 8 de la corde de mi grave. Montée-descente lentement, en nommant la fondamentale à chaque passage.</p></div>
+    <div class="corps"><h4>La deuxième position, case 8</h4><p>Elle démarre sur le do, case 8 de la corde de Mi grave. Montée-descente lentement, en nommant la fondamentale à chaque passage.</p></div>
     <div class="marge"><div class="note"><b>Il plaque la première position deux cases plus haut</b>Erreur classique. La forme change, ce sont les mêmes notes mais pas le même dessin. Fais-lui vérifier note par note.</div></div>
    </div>
    <div class="etape" data-type="jeu" data-dur="14" style="--dur:14">
@@ -183,7 +257,7 @@ note  LA SI DO RÉ MI FA SOL LA
    </div>
    <div class="etape" data-type="morceau" data-dur="9" style="--dur:9">
     <div class="tick"><span>47</span></div>
-    <div class="corps"><h4>Sur une grille</h4><p>Tu joues un blues lent en la, il improvise en changeant de position au moins deux fois. Consigne : chaque phrase commence dans une position et finit dans l'autre.</p></div>
+    <div class="corps"><h4>Sur une grille</h4><p>Tu joues un blues lent en La, il improvise en changeant de position au moins deux fois. Consigne : chaque phrase commence dans une position et finit dans l'autre.</p></div>
     <div class="marge"></div>
    </div>
    <div class="etape" data-type="cadre" data-dur="4" style="--dur:4">
@@ -202,12 +276,12 @@ B|----------------5--8-----|
 G|-----------5--7----------|
 D|--------5--7-------------|
 A|-----5--7----------------|
-E|--5--8-------------------|</pre><p class="cap">La mineur. Fondamentale : case 5 de la corde de mi grave.</p></div><div class="f-col"><h5>Position VIII</h5><pre class="tab">e|--------------------8--10--|
+E|--5--8-------------------|</pre><p class="cap">Pentatonique de La mineur. Fondamentale : case 5 de la corde de Mi grave.</p></div><div class="f-col"><h5>Position VIII</h5><pre class="tab">e|--------------------8--10--|
 B|----------------8--10------|
 G|------------7--9-----------|
 D|--------7--10--------------|
 A|----7--10------------------|
-E|--8--10--------------------|</pre><p class="cap">Démarre sur le do, case 8. Ce sont les mêmes cinq notes, un autre dessin.</p><h5>La charnière</h5><p class="cap">Les cases 7 et 8 appartiennent aux deux positions. C'est le seul endroit par lequel passer.</p></div><div class="f-col"><h5>À la maison</h5><div class="devoir"><b>1.</b> Chaque position seule, au métronome à 60, deux minutes chacune.<br><b>2.</b> Monte en position V, redescends en position VIII. Sans t'arrêter au changement — une fausse note en rythme vaut mieux qu'un trou.<br><b>3.</b> Les cinq notes : <b>la do ré mi sol</b>. Trouve-les toutes sur la corde de si.</div></div></div>
+E|--8--10--------------------|</pre><p class="cap">Démarre sur le do, case 8. Ce sont les mêmes cinq notes, un autre dessin.</p><h5>La charnière</h5><p class="cap">Les cases 7 et 8 appartiennent aux deux positions. C'est le seul endroit par lequel passer.</p></div><div class="f-col"><h5>À la maison</h5><div class="devoir"><b>1.</b> Chaque position seule, au métronome à 60, deux minutes chacune.<br><b>2.</b> Monte en position V, redescends en position VIII. Sans t'arrêter au changement — une fausse note en rythme vaut mieux qu'un trou.<br><b>3.</b> Les cinq notes : <b>La Do Ré Mi Sol</b>. Trouve-les toutes sur la corde de Si.</div></div></div>
   </div>
  </div>
 </section>
@@ -222,18 +296,18 @@ E|--8--10--------------------|</pre><p class="cap">Démarre sur le do, case 8. C
    </div>
    <div class="etape" data-type="montre" data-dur="7" style="--dur:7">
     <div class="tick"><span>4</span></div>
-    <div class="corps"><h4>Où elle est</h4><p>La gamme blues de la, c'est la pentatonique plus le mi♭. Une seule note ajoutée, coincée entre le ré et le mi.</p></div>
+    <div class="corps"><h4>Où elle est</h4><p>La gamme blues de La, c'est la pentatonique plus le Mi♭. Une seule note ajoutée, coincée entre le Ré et le Mi.</p></div>
     <div class="marge"><div class="note"><b>Il cherche une nouvelle gamme</b>Ce n'est pas une gamme nouvelle, c'est la sienne avec une note en plus. Le dire tout de suite lui économise une semaine de confusion.</div></div>
    </div>
    <div class="etape" data-type="jeu" data-dur="12" style="--dur:12">
     <div class="tick"><span>11</span></div>
-    <div class="corps"><h4>La blue note dans la position V</h4><p>Case 6 de la corde de la, case 8 de la corde de sol. Deux endroits, pas plus, pour commencer.</p></div>
-    <div class="marge"><div class="note"><b>Il s'installe dessus</b>C'est une note de passage. Tenue, elle sonne faux ; traversée, elle sonne blues. Fais-lui jouer ré–mi♭–mi enchaînés, puis le mi♭ tenu quatre temps : la différence s'entend.</div></div>
+    <div class="corps"><h4>La blue note dans la position V</h4><p>Case 6 de la corde de La, case 8 de la corde de Sol. Deux endroits, pas plus, pour commencer.</p></div>
+    <div class="marge"><div class="note"><b>Il s'installe dessus</b>C'est une note de passage. Tenue, elle sonne faux ; traversée, elle sonne blues. Fais-lui jouer ré–Mi♭–mi enchaînés, puis le Mi♭ tenu quatre temps : la différence s'entend.</div></div>
    </div>
    <div class="etape" data-type="jeu" data-dur="12" style="--dur:12">
     <div class="tick"><span>23</span></div>
-    <div class="corps"><h4>Y arriver par le bend</h4><p>Le vrai geste : partir du ré, case 7 de la corde de sol, et tirer d'un demi-ton. La note arrive de dessous, elle n'est pas plaquée.</p></div>
-    <div class="marge"><div class="note"><b>Le bend d'un demi-ton dépasse</b>Un demi-ton, c'est peu, et la main a l'habitude du ton entier. Donne-lui la cible : joue le mi♭ case 8, puis fais-lui viser ce son en tirant.</div></div>
+    <div class="corps"><h4>Y arriver par le bend</h4><p>Le vrai geste : partir du Ré, case 7 de la corde de Sol, et tirer d'un demi-ton. La note arrive de dessous, elle n'est pas plaquée.</p></div>
+    <div class="marge"><div class="note"><b>Le bend d'un demi-ton dépasse</b>Un demi-ton, c'est peu, et la main a l'habitude du ton entier. Donne-lui la cible : joue le Mi♭ case 8, puis fais-lui viser ce son en tirant.</div></div>
    </div>
    <div class="etape" data-type="jeu" data-dur="10" style="--dur:10">
     <div class="tick"><span>35</span></div>
@@ -242,7 +316,7 @@ E|--8--10--------------------|</pre><p class="cap">Démarre sur le do, case 8. C
    </div>
    <div class="etape" data-type="morceau" data-dur="11" style="--dur:11">
     <div class="tick"><span>45</span></div>
-    <div class="corps"><h4>Sur le blues en la</h4><p>Tu accompagnes, il improvise. Consigne : au maximum deux blue notes par grille de douze mesures.</p></div>
+    <div class="corps"><h4>Sur le blues en La</h4><p>Tu accompagnes, il improvise. Consigne : au maximum deux blue notes par grille de douze mesures.</p></div>
     <div class="marge"><div class="note"><b>Il en met partout</b>D'où la consigne. Une blue note toutes les douze mesures s'entend ; une par mesure ne s'entend plus.</div></div>
    </div>
    <div class="etape" data-type="cadre" data-dur="4" style="--dur:4">
@@ -252,17 +326,17 @@ E|--8--10--------------------|</pre><p class="cap">Démarre sur le do, case 8. C
    </div>
    <div class="fin-heure"><div class="tick"><span>60</span></div><div></div></div>
   </div>
-  <div class="s-pied"><div class="p-lab">Si ça ne se passe pas comme prévu</div><div class="p-body"><p><b>S'il n'entend pas la différence :</b> joue-lui deux fois la même phrase, avec et sans, sur un accompagnement. À sec, la blue note ne veut rien dire ; c'est le frottement avec l'accord qui la définit.</p><p><b>S'il veut la position VIII aussi :</b> elle y est case 11 de la corde de mi grave et case 9 de la corde de si. Mais ne charge pas : la position V suffit pour cette séance.</p></div></div>
+  <div class="s-pied"><div class="p-lab">Si ça ne se passe pas comme prévu</div><div class="p-body"><p><b>S'il n'entend pas la différence :</b> joue-lui deux fois la même phrase, avec et sans, sur un accompagnement. À sec, la blue note ne veut rien dire ; c'est le frottement avec l'accord qui la définit.</p><p><b>S'il veut la position VIII aussi :</b> elle y est case 11 de la corde de Mi grave et case 9 de la corde de Si. Mais ne charge pas : la position V suffit pour cette séance.</p></div></div>
   <div class="feuille">
    <div class="f-cut"><span>à détacher</span></div>
    <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Séance III — la gamme blues de la</span><button class="f-print" type="button">Exporter cette feuille en PDF</button></div>
    <div class="f-cols"><div class="f-col"><h5>La gamme blues, position V</h5><pre class="tab">e|--------------------------5--8--|
 B|-----------------------5--8-----|
-G|-----------------5--7--8--------|
+G|-----------------5--7--<b>8</b>--------|
 D|--------------5--7--------------|
-A|-----5--6--7--------------------|
-E|--5--8--------------------------|</pre><p class="cap">Les deux notes en gras : case 6 de la corde de la, case 8 de la corde de sol. C'est le mi♭, la blue note.</p></div><div class="f-col"><h5>Y arriver par le bend</h5><pre class="tab">   demi-ton
-G|--7b(8)--7--5--|</pre><p class="cap">Pars du ré, tire d'un demi-ton seulement. La note doit arriver par en dessous.</p><h5>Les six notes</h5><p>LA · DO · RÉ · <b>MI♭</b> · MI · SOL</p><p class="cap">Cinq de la pentatonique, plus une.</p></div><div class="f-col"><h5>À la maison</h5><div class="devoir"><b>1.</b> Joue ré – mi♭ – mi enchaînés, en boucle. Puis tiens le mi♭ quatre temps : écoute comme ça sonne faux. C'est normal.<br><b>2.</b> Le bend d'un demi-ton, case 7 corde de sol. Vérifie en jouant la case 8 juste avant.<br><b>3.</b> Sur un blues : <b>deux blue notes maximum</b> par grille de douze mesures.</div></div></div>
+A|-----5--<b>6</b>--7--------------------|
+E|--5--8--------------------------|</pre><p class="cap">Les deux notes en couleur : case 6 de la corde de La, case 8 de la corde de Sol. C'est le Mi♭, la blue note.</p></div><div class="f-col"><h5>Y arriver par le bend</h5><pre class="tab">   demi-ton
+G|--7b(8)--7--5--|</pre><p class="cap">Pars du Ré, tire d'un demi-ton seulement. La note doit arriver par en dessous.</p><h5>Les six notes</h5><p>LA · DO · RÉ · <b>MI♭</b> · MI · SOL</p><p class="cap">Cinq de la pentatonique, plus une.</p></div><div class="f-col"><h5>À la maison</h5><div class="devoir"><b>1.</b> Joue ré – Mi♭ – mi enchaînés, en boucle. Puis tiens le Mi♭ quatre temps : écoute comme ça sonne faux. C'est normal.<br><b>2.</b> Le bend d'un demi-ton, case 7 corde de Sol. Vérifie en jouant la case 8 juste avant.<br><b>3.</b> Sur un blues : <b>deux blue notes maximum</b> par grille de douze mesures.</div></div></div>
   </div>
  </div>
 </section>
@@ -282,7 +356,7 @@ G|--7b(8)--7--5--|</pre><p class="cap">Pars du ré, tire d'un demi-ton seulement
    </div>
    <div class="etape" data-type="jeu" data-dur="14" style="--dur:14">
     <div class="tick"><span>11</span></div>
-    <div class="corps"><h4>Le chromatique, corde de mi grave</h4><p>Un doigt par case. 0-1-2-3, puis 2-3-4-5, puis 3-4-5-6, puis 4-5-6-7. Métronome à 60, une note par temps, puis deux.</p></div>
+    <div class="corps"><h4>Le chromatique, corde de Mi grave</h4><p>Un doigt par case. 0-1-2-3, puis 2-3-4-5, puis 3-4-5-6, puis 4-5-6-7. Métronome à 60, une note par temps, puis deux.</p></div>
     <div class="marge"><div class="note"><b>Il repart vers le bas après une corde à vide</b>Le réflexe le plus tenace. Fais-lui compter à voix haute « bas-haut-bas-haut » pendant qu'il joue, deux minutes.</div><div class="note"><b>L'auriculaire décroche</b>Il ne suit pas encore. Descends le tempo jusqu'à ce qu'il tienne, même à 40. Ce doigt-là se gagne en trois semaines.</div></div>
    </div>
    <div class="etape" data-type="jeu" data-dur="13" style="--dur:13">
@@ -340,7 +414,7 @@ E|--3--4--5--6--4--5--6--7-------|
    </div>
    <div class="etape" data-type="jeu" data-dur="15" style="--dur:15">
     <div class="tick"><span>12</span></div>
-    <div class="corps"><h4>Le va-et-vient sur la</h4><p>La corde de la à vide en basse, et trois notes sur ré-sol-si qui alternent entre la case 7 et la case 5. C'est tout l'accompagnement du premier accord.</p></div>
+    <div class="corps"><h4>Le va-et-vient sur la</h4><p>La corde de La à vide en basse, et trois notes sur Ré-Sol-Si qui alternent entre la case 7 et la case 5. C'est tout l'accompagnement du premier accord.</p></div>
     <div class="marge"><div class="note"><b>Il fait sonner les cordes graves inutiles</b>La main droite n'attaque que la basse puis le bloc de trois. C'est un geste en deux temps, pas un grattage.</div><div class="note"><b>Le bloc de trois ne sonne pas ensemble</b>Les trois doigts se posent en même temps, pas l'un après l'autre. Fais-lui poser-lever dix fois sans jouer.</div></div>
    </div>
    <div class="etape" data-type="jeu" data-dur="12" style="--dur:12">
@@ -350,7 +424,7 @@ E|--3--4--5--6--4--5--6--7-------|
    </div>
    <div class="etape" data-type="jeu" data-dur="9" style="--dur:9">
     <div class="tick"><span>39</span></div>
-    <div class="corps"><h4>Les deux autres degrés</h4><p>Même principe sur ré et sur mi, mais le bloc se joue sur les trois cordes aiguës. Ré case 7, do case 5, mi case 9.</p></div>
+    <div class="corps"><h4>Les deux autres degrés</h4><p>Même principe sur D et sur E, mais le bloc se joue sur les trois cordes aiguës. D case 7, C case 5, E case 9.</p></div>
     <div class="marge"></div>
    </div>
    <div class="etape" data-type="morceau" data-dur="8" style="--dur:8">
@@ -365,11 +439,11 @@ E|--3--4--5--6--4--5--6--7-------|
    </div>
    <div class="fin-heure"><div class="tick"><span>60</span></div><div></div></div>
   </div>
-  <div class="s-pied"><div class="p-lab">Si ça ne se passe pas comme prévu</div><div class="p-body"><p><b>C'est une séance qui peut prendre deux cours.</b> Le va-et-vient sur la corde de la est un geste entièrement nouveau. Ne passe pas aux autres degrés tant que le premier n'est pas fluide.</p><p><b>Sur folk :</b> ça marche très bien, c'est même l'idiome du blues acoustique. Attaque au médiator ou au pouce, comme il préfère.</p><p><b>S'il a du mal à tenir la basse :</b> laisse tomber la basse pendant dix minutes et ne fais que les blocs. Tu la rajoutes après.</p></div></div>
+  <div class="s-pied"><div class="p-lab">Si ça ne se passe pas comme prévu</div><div class="p-body"><p><b>C'est une séance qui peut prendre deux cours.</b> Le va-et-vient sur la corde de La est un geste entièrement nouveau. Ne passe pas aux autres degrés tant que le premier n'est pas fluide.</p><p><b>Sur folk :</b> ça marche très bien, c'est même l'idiome du blues acoustique. Attaque au médiator ou au pouce, comme il préfère.</p><p><b>S'il a du mal à tenir la basse :</b> laisse tomber la basse pendant dix minutes et ne fais que les blocs. Tu la rajoutes après.</p></div></div>
   <div class="feuille">
    <div class="f-cut"><span>à détacher</span></div>
    <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Séance V — le blues en sixtes</span><button class="f-print" type="button">Exporter cette feuille en PDF</button></div>
-   <div class="f-cols"><div class="f-col"><h5>Le premier degré (la)</h5><pre class="tab">   A6       G6
+   <div class="f-cols"><div class="f-col"><h5>Le premier degré (A)</h5><pre class="tab">   A6       G6
 e|-----------------|
 B|--7--------5-----|
 G|--6--------4-----|
@@ -381,7 +455,7 @@ B|--7-----5-------9--|
 G|--7-----5-------9--|
 D|--0-----0----------|
 A|----------------0--|
-E|-------------------|</pre><p class="cap">Même idée, sur les trois cordes aiguës. Basse de ré à vide, puis de mi à vide.</p><h5>La grille</h5><div class="grille"><span>A</span><span>A</span><span>A</span><span>A</span><span>D</span><span>D</span><span>A</span><span>A</span><span>E</span><span>D</span><span>A</span><span>A</span></div></div><div class="f-col"><h5>Le shuffle</h5><p>Ternaire, ♩ = 100. Le premier temps long, le second court. Si tu ne peux pas le chanter en jouant, tu joues trop vite.</p><h5>À la maison</h5><div class="devoir"><b>1.</b> Le va-et-vient sur la seule, deux minutes sans t'arrêter, à 80.<br><b>2.</b> Pose les trois doigts <b>en même temps</b>. Pose-lève dix fois sans jouer.<br><b>3.</b> La grille entière à 80, puis à 90. Le 100 viendra.</div></div></div>
+E|-------------------|</pre><p class="cap">Même idée, sur les trois cordes aiguës. Basse de Ré à vide, puis de Mi à vide.</p><h5>La grille</h5><div class="grille"><span>A</span><span>A</span><span>A</span><span>A</span><span>D</span><span>D</span><span>A</span><span>A</span><span>E</span><span>D</span><span>A</span><span>A</span></div></div><div class="f-col"><h5>Le shuffle</h5><p>Ternaire, ♩ = 100. Le premier temps long, le second court. Si tu ne peux pas le chanter en jouant, tu joues trop vite.</p><h5>À la maison</h5><div class="devoir"><b>1.</b> Le va-et-vient sur la seule, deux minutes sans t'arrêter, à 80.<br><b>2.</b> Pose les trois doigts <b>en même temps</b>. Pose-lève dix fois sans jouer.<br><b>3.</b> La grille entière à 80, puis à 90. Le 100 viendra.</div></div></div>
   </div>
  </div>
 </section>
@@ -406,7 +480,7 @@ E|-------------------|</pre><p class="cap">Même idée, sur les trois cordes aig
    </div>
    <div class="etape" data-type="jeu" data-dur="12" style="--dur:12">
     <div class="tick"><span>26</span></div>
-    <div class="corps"><h4>L'accord d'arrivée</h4><p>La septième de la, avec la montée sur la corde de mi aigu. C'est la ponctuation : sans elle le turnaround reste en suspens.</p></div>
+    <div class="corps"><h4>L'accord d'arrivée</h4><p>La septième de la, avec la montée sur la corde de Mi aigu. C'est la ponctuation : sans elle le turnaround reste en suspens.</p></div>
     <div class="marge"><div class="note"><b>Il enchaîne directement sur le début</b>Il manque un temps. Fais-lui compter : le turnaround occupe la mesure 11, l'accord d'arrivée la mesure 12.</div></div>
    </div>
    <div class="etape" data-type="jeu" data-dur="10" style="--dur:10">
@@ -447,7 +521,7 @@ E|-------------|</pre><p class="cap">Mesure 12. La montée sur la corde aiguë e
 </section>
 <section class="seance" id="i7">
  <div class="wrap">
-  <header class="s-head"><div class="s-num">VII</div><div class="s-titre"><h2>Hey Joe, ou la grille qui monte</h2><p class="objectif">Cinq accords : <em>do, sol, ré, la, mi</em>. Chacun est la quinte du précédent. Une fois qu'il voit ça, il ne l'oublie plus et il la retrouve dans la moitié de ce qu'il écoute.</p></div><div class="s-meta"><span class="m-lab">Guitare en main</span><span class="m-val">—</span></div></header>
+  <header class="s-head"><div class="s-num">VII</div><div class="s-titre"><h2>Hey Joe, ou la grille qui monte</h2><p class="objectif">Cinq accords : <em>C, G, D, A, E</em>. Chacun est la quinte du précédent. Une fois qu'il voit ça, il ne l'oublie plus et il la retrouve dans la moitié de ce qu'il écoute.</p></div><div class="s-meta"><span class="m-lab">Guitare en main</span><span class="m-val">—</span></div></header>
   <div class="heure">
    <div class="etape" data-type="cadre" data-dur="4" style="--dur:4">
     <div class="tick"><span>0</span></div>
@@ -456,22 +530,22 @@ E|-------------|</pre><p class="cap">Mesure 12. La montée sur la corde aiguë e
    </div>
    <div class="etape" data-type="jeu" data-dur="10" style="--dur:10">
     <div class="tick"><span>4</span></div>
-    <div class="corps"><h4>La grille</h4><p>Do, sol, ré, la, mi. Une mesure chacun, deux sur le mi, et ça recommence. Il l'écrit dans son carnet avant de la jouer.</p></div>
+    <div class="corps"><h4>La grille</h4><p>C, G, D, A, E. Une mesure chacun, deux sur le mi, et ça recommence. Il l'écrit dans son carnet avant de la jouer.</p></div>
     <div class="marge"><div class="note"><b>Il se perd dans une boucle de cinq accords</b>On compte quatre par réflexe. Fais-lui dire le nom de l'accord suivant à voix haute pendant qu'il joue le précédent.</div></div>
    </div>
    <div class="etape" data-type="montre" data-dur="8" style="--dur:8">
     <div class="tick"><span>14</span></div>
-    <div class="corps"><h4>Pourquoi ça tourne</h4><p>Chaque accord est à la quinte du précédent. Do vers sol, sol vers ré, ré vers la, la vers mi. Montre-le sur la corde de mi grave : à chaque fois, on monte de sept cases, ou on descend de cinq.</p></div>
+    <div class="corps"><h4>Pourquoi ça tourne</h4><p>Chaque accord est à la quinte du précédent. Do vers sol, sol vers ré, ré vers la, la vers mi. Montre-le sur la corde de Mi grave : à chaque fois, on monte de sept cases, ou on descend de cinq.</p></div>
     <div class="marge"><div class="note"><b>Il veut la théorie complète</b>Non. Une seule idée aujourd'hui : quinte après quinte, ça tire vers l'avant. Le reste attendra.</div></div>
    </div>
    <div class="etape" data-type="jeu" data-dur="14" style="--dur:14">
     <div class="tick"><span>22</span></div>
-    <div class="corps"><h4>Les enchaînements</h4><p>Le passage difficile est ré vers la, puis la vers mi : trois accords ouverts d'affilée qui se ressemblent. Isole-le.</p></div>
+    <div class="corps"><h4>Les enchaînements</h4><p>Le passage difficile est D vers A, puis A vers E : trois accords ouverts d'affilée qui se ressemblent. Isole-le.</p></div>
     <div class="marge"><div class="note"><b>Les changements traînent</b>Deux temps par accord au lieu de quatre, pendant cinq minutes. Puis on revient à quatre : ça paraît facile.</div></div>
    </div>
    <div class="etape" data-type="jeu" data-dur="10" style="--dur:10">
     <div class="tick"><span>36</span></div>
-    <div class="corps"><h4>La version barrée</h4><p>La même grille en formes mobiles, do case 8 et sol case 3 sur la corde de mi grave. C'est là que la séance I paye.</p></div>
+    <div class="corps"><h4>La version barrée</h4><p>La même grille en formes mobiles, C case 8 et G case 3 sur la corde de Mi grave. C'est là que la séance I paye.</p></div>
     <div class="marge"></div>
    </div>
    <div class="etape" data-type="morceau" data-dur="10" style="--dur:10">
@@ -481,7 +555,7 @@ E|-------------|</pre><p class="cap">Mesure 12. La montée sur la corde aiguë e
    </div>
    <div class="etape" data-type="cadre" data-dur="4" style="--dur:4">
     <div class="tick"><span>56</span></div>
-    <div class="corps"><h4>Le mi de la fin</h4><p>Annonce la séance VIII : le dernier accord de la boucle n'est pas un mi ordinaire.</p></div>
+    <div class="corps"><h4>Le mi de la fin</h4><p>Annonce la séance VIII : le dernier accord de la boucle n'est pas un E ordinaire.</p></div>
     <div class="marge"></div>
    </div>
    <div class="fin-heure"><div class="tick"><span>60</span></div><div></div></div>
@@ -490,18 +564,18 @@ E|-------------|</pre><p class="cap">Mesure 12. La montée sur la corde aiguë e
   <div class="feuille">
    <div class="f-cut"><span>à détacher</span></div>
    <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Séance VII — la grille de quintes</span><button class="f-print" type="button">Exporter cette feuille en PDF</button></div>
-   <div class="f-cols"><div class="f-col"><h5>La grille</h5><div class="grille"><span>C</span><span>G</span><span>D</span><span>A</span><span>E</span><span>E</span></div><p class="cap">Une mesure par case, deux sur le mi, et ça recommence. En français : do, sol, ré, la, mi.</p><h5>Pourquoi ça tourne</h5><p>Chaque accord est à la <b>quinte</b> du précédent.</p><pre class="tab">do → sol → ré → la → mi
-  +7    +7   +7   +7   cases</pre></div><div class="f-col"><h5>Les accords</h5><div class="accords"><span class="accord" data-chord="C"></span><span class="accord" data-chord="G"></span><span class="accord" data-chord="D"></span><span class="accord" data-chord="A"></span><span class="accord" data-chord="E"></span></div><h5>En barrés</h5><pre class="tab">do   forme de la, case 3
-sol  forme de mi, case 3
-ré   forme de la, case 5
-la   forme de mi, case 5
-mi   forme de mi, case 12</pre></div><div class="f-col"><h5>À la maison</h5><div class="devoir"><b>1.</b> La grille à 70, quatre temps par accord. Dis le nom de l'accord <b>suivant</b> pendant que tu joues le précédent.<br><b>2.</b> Isole ré → la → mi. C'est le passage qui traîne.<br><b>3.</b> Puis deux temps par accord. Puis retour à quatre : ça paraîtra lent.</div></div></div>
+   <div class="f-cols"><div class="f-col"><h5>La grille</h5><div class="grille"><span>C</span><span>G</span><span>D</span><span>A</span><span>E</span><span>E</span></div><p class="cap">Une mesure par case, deux sur le mi, et ça recommence. En français : Do, Sol, Ré, La, Mi.</p><h5>Pourquoi ça tourne</h5><p>Chaque accord est à la <b>quinte</b> du précédent.</p><pre class="tab">C  →  G  →  D  →  A  →  E
+  +7    +7   +7   +7   cases</pre></div><div class="f-col"><h5>Les accords</h5><div class="accords"><span class="accord" data-chord="C"></span><span class="accord" data-chord="G"></span><span class="accord" data-chord="D"></span><span class="accord" data-chord="A"></span><span class="accord" data-chord="E"></span></div><h5>En barrés</h5><pre class="tab">C   forme de A, case 3
+G   forme de E, case 3
+D   forme de A, case 5
+A   forme de E, case 5
+E   forme de E, case 12</pre></div><div class="f-col"><h5>À la maison</h5><div class="devoir"><b>1.</b> La grille à 70, quatre temps par accord. Dis le nom de l'accord <b>suivant</b> pendant que tu joues le précédent.<br><b>2.</b> Isole D → A → E. C'est le passage qui traîne.<br><b>3.</b> Puis deux temps par accord. Puis retour à quatre : ça paraîtra lent.</div></div></div>
   </div>
  </div>
 </section>
 <section class="seance" id="i8">
  <div class="wrap">
-  <header class="s-head"><div class="s-num">VIII</div><div class="s-titre"><h2>L'accord de Hendrix</h2><p class="objectif">Le mi septième dièse neuf. Un accord qui contient sa tierce majeure et sa tierce mineure en même temps — ce qui devrait sonner faux, et qui sonne comme le blues électrique tout entier.</p></div><div class="s-meta"><span class="m-lab">Guitare en main</span><span class="m-val">—</span></div></header>
+  <header class="s-head"><div class="s-num">VIII</div><div class="s-titre"><h2>L'accord de Hendrix</h2><p class="objectif">E7♯9, qu'on dit « mi sept dièse neuf ». Un accord qui contient sa tierce majeure et sa tierce mineure en même temps — ce qui devrait sonner faux, et qui sonne comme le blues électrique tout entier.</p></div><div class="s-meta"><span class="m-lab">Guitare en main</span><span class="m-val">—</span></div></header>
   <div class="heure">
    <div class="etape" data-type="cadre" data-dur="4" style="--dur:4">
     <div class="tick"><span>0</span></div>
@@ -510,12 +584,12 @@ mi   forme de mi, case 12</pre></div><div class="f-col"><h5>À la maison</h5><di
    </div>
    <div class="etape" data-type="jeu" data-dur="14" style="--dur:14">
     <div class="tick"><span>4</span></div>
-    <div class="corps"><h4>La forme</h4><p>Case 7 sur la corde de la pour la fondamentale, puis ré, sol, si. Quatre doigts, quatre cordes, et on n'attaque que celles-là.</p></div>
-    <div class="marge"><div class="note"><b>Les cordes de mi sonnent</b>Elles n'ont rien à faire là. L'index qui tient la fondamentale s'incline pour étouffer le mi grave ; l'auriculaire couche légèrement pour étouffer le mi aigu.</div><div class="note"><b>L'accord sonne bouché</b>Les doigts sont à plat. Sur quatre cordes serrées il faut jouer sur la pointe, sinon tout s'étouffe.</div></div>
+    <div class="corps"><h4>La forme</h4><p>Case 7 sur la corde de La pour la fondamentale, puis ré, sol, si. Quatre doigts, quatre cordes, et on n'attaque que celles-là.</p></div>
+    <div class="marge"><div class="note"><b>Les cordes de Mi sonnent</b>Elles n'ont rien à faire là. L'index qui tient la fondamentale s'incline pour étouffer le mi grave ; l'auriculaire couche légèrement pour étouffer le mi aigu.</div><div class="note"><b>L'accord sonne bouché</b>Les doigts sont à plat. Sur quatre cordes serrées il faut jouer sur la pointe, sinon tout s'étouffe.</div></div>
    </div>
    <div class="etape" data-type="montre" data-dur="8" style="--dur:8">
     <div class="tick"><span>18</span></div>
-    <div class="corps"><h4>Ce qu'il y a dedans</h4><p>Mi, sol♯, ré, sol. Le sol♯ est la tierce majeure, le sol la tierce mineure. Les deux ensemble : c'est exactement le frottement de la blue note, mais plaqué dans un accord.</p></div>
+    <div class="corps"><h4>Ce qu'il y a dedans</h4><p>Mi, Sol♯, ré, sol. Le Sol♯ est la tierce majeure, le sol la tierce mineure. Les deux ensemble : c'est exactement le frottement de la blue note, mais plaqué dans un accord.</p></div>
     <div class="marge"><div class="note"><b>Il demande pourquoi ça ne sonne pas faux</b>Parce que le sol est écrit un octave plus haut et joué comme une neuvième. C'est la seule explication à donner aujourd'hui.</div></div>
    </div>
    <div class="etape" data-type="jeu" data-dur="12" style="--dur:12">
@@ -530,7 +604,7 @@ mi   forme de mi, case 12</pre></div><div class="f-col"><h5>À la maison</h5><di
    </div>
    <div class="etape" data-type="morceau" data-dur="9" style="--dur:9">
     <div class="tick"><span>47</span></div>
-    <div class="corps"><h4>La grille du solo</h4><p>Mi septième dièse neuf, puis sol, puis la. Trois accords qui tournent, et c'est là-dessus qu'on improvisera à la séance X.</p></div>
+    <div class="corps"><h4>La grille du solo</h4><p>E7♯9, puis G, puis A. Trois accords qui tournent, et c'est là-dessus qu'on improvisera à la séance X.</p></div>
     <div class="marge"></div>
    </div>
    <div class="etape" data-type="cadre" data-dur="4" style="--dur:4">
@@ -540,18 +614,18 @@ mi   forme de mi, case 12</pre></div><div class="f-col"><h5>À la maison</h5><di
    </div>
    <div class="fin-heure"><div class="tick"><span>60</span></div><div></div></div>
   </div>
-  <div class="s-pied"><div class="p-lab">Si ça ne se passe pas comme prévu</div><div class="p-body"><p><b>Si l'écartement ne passe pas :</b> il existe une version à trois cordes, sans la fondamentale, que le bassiste ou la corde grave assurent. Mais fais l'effort deux semaines avant de plier.</p><p><b>Sur folk :</b> l'accord existe mais il sonne dur en acoustique. Garde-le pour l'électrique, et remplace-le par un mi septième ordinaire si l'élève n'a qu'une folk.</p><p><b>Réglage :</b> une saturation moyenne, pas maximale. Cet accord a besoin qu'on entende ses quatre notes séparément, sinon son intérêt disparaît.</p></div></div>
+  <div class="s-pied"><div class="p-lab">Si ça ne se passe pas comme prévu</div><div class="p-body"><p><b>Si l'écartement ne passe pas :</b> il existe une version à trois cordes, sans la fondamentale, que le bassiste ou la corde grave assurent. Mais fais l'effort deux semaines avant de plier.</p><p><b>Sur folk :</b> l'accord existe mais il sonne dur en acoustique. Garde-le pour l'électrique, et remplace-le par un E7 ordinaire si l'élève n'a qu'une folk.</p><p><b>Réglage :</b> une saturation moyenne, pas maximale. Cet accord a besoin qu'on entende ses quatre notes séparément, sinon son intérêt disparaît.</p></div></div>
   <div class="feuille">
    <div class="f-cut"><span>à détacher</span></div>
-   <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Séance VIII — mi 7 ♯9</span><button class="f-print" type="button">Exporter cette feuille en PDF</button></div>
+   <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Séance VIII — E7♯9</span><button class="f-print" type="button">Exporter cette feuille en PDF</button></div>
    <div class="f-cols"><div class="f-col"><h5>La forme</h5><div class="accords"><span class="accord" data-chord="E7s9"></span></div><pre class="tab">e|--x--|  ne pas jouer
-B|--8--|  sol   ← la neuvième augmentée
-G|--7--|  ré    ← la septième
-D|--6--|  sol♯  ← la tierce majeure
-A|--7--|  mi    ← la fondamentale
-E|--x--|  ne pas jouer</pre></div><div class="f-col"><h5>Ce qu'il y a dedans</h5><p>Une tierce <b>majeure</b> (sol♯) et une tierce <b>mineure</b> (sol) dans le même accord. C'est le frottement de la blue note, plaqué.</p><h5>Il est mobile</h5><pre class="tab">case 5   →  ré 7♯9
-case 7   →  mi 7♯9
-case 10  →  sol 7♯9</pre><p class="cap">La fondamentale est sur la corde de la. Les notes de la séance I servent ici.</p></div><div class="f-col"><h5>La grille du solo</h5><div class="grille"><span>E7♯9</span><span>G</span><span>A</span></div><h5>À la maison</h5><div class="devoir"><b>1.</b> L'accord seul, corde par corde : les quatre sonnent-elles ?<br><b>2.</b> Étouffe les deux cordes de mi. L'index s'incline, l'auriculaire couche.<br><b>3.</b> <b>Court et sec.</b> Plaque, étouffe, repars. Ne le laisse jamais sonner quatre temps.</div></div></div>
+B|--8--|  Sol   ← la neuvième augmentée
+G|--7--|  Ré    ← la septième
+D|--6--|  Sol♯  ← la tierce majeure
+A|--7--|  Mi    ← la fondamentale
+E|--x--|  ne pas jouer</pre></div><div class="f-col"><h5>Ce qu'il y a dedans</h5><p>Une tierce <b>majeure</b> (Sol♯) et une tierce <b>mineure</b> (sol) dans le même accord. C'est le frottement de la blue note, plaqué.</p><h5>Il est mobile</h5><pre class="tab">case 5   →  D7♯9
+case 7   →  E7♯9
+case 10  →  G7♯9</pre><p class="cap">La fondamentale est sur la corde de La. Les notes de la séance I servent ici.</p></div><div class="f-col"><h5>La grille du solo</h5><div class="grille"><span>E7♯9</span><span>G</span><span>A</span></div><h5>À la maison</h5><div class="devoir"><b>1.</b> L'accord seul, corde par corde : les quatre sonnent-elles ?<br><b>2.</b> Étouffe les deux cordes de Mi. L'index s'incline, l'auriculaire couche.<br><b>3.</b> <b>Court et sec.</b> Plaque, étouffe, repars. Ne le laisse jamais sonner quatre temps.</div></div></div>
   </div>
  </div>
 </section>
@@ -566,7 +640,7 @@ case 10  →  sol 7♯9</pre><p class="cap">La fondamentale est sur la corde de 
    </div>
    <div class="etape" data-type="jeu" data-dur="12" style="--dur:12">
     <div class="tick"><span>4</span></div>
-    <div class="corps"><h4>Le bend d'un ton</h4><p>Corde de sol, case 7, poussée vers le haut jusqu'à sonner comme la case 9. Trois doigts poussent ensemble, le poignet tourne comme une clé.</p></div>
+    <div class="corps"><h4>Le bend d'un ton</h4><p>Corde de Sol, case 7, poussée vers le haut jusqu'à sonner comme la case 9. Trois doigts poussent ensemble, le poignet tourne comme une clé.</p></div>
     <div class="marge"><div class="note"><b>Le bend n'arrive pas à la note</b>Donne-lui la cible : joue la case 9 d'abord, il vise ce son. Un bend se règle à l'oreille, pas à la distance.</div><div class="note"><b>Il pousse avec l'annulaire seul</b>Le majeur et l'index viennent derrière, sur la même corde. Sinon c'est le tendon qui travaille et ça finit par faire mal.</div></div>
    </div>
    <div class="etape" data-type="jeu" data-dur="10" style="--dur:10">
@@ -602,7 +676,7 @@ case 10  →  sol 7♯9</pre><p class="cap">La fondamentale est sur la corde de 
    <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Séance IX — les articulations</span><button class="f-print" type="button">Exporter cette feuille en PDF</button></div>
    <div class="f-cols"><div class="f-col"><h5>Les gestes</h5><pre class="tab">   ton      1/4 ton   vibrato   slide
 G|--7b(9)--|--7b--|--7~~~--|--5/7--|</pre><ul><li><b>b</b> — bend. Trois doigts poussent, le poignet tourne.</li><li><b>1/4</b> — le petit tiré blues. On s'arrête entre les deux notes.</li><li><b>~</b> — vibrato. Il part du poignet et commence <b>après</b> la note.</li><li><b>/</b> — slide. On ne réattaque pas la seconde note.</li></ul></div><div class="f-col"><h5>Régler le bend à l'oreille</h5><pre class="tab">G|--9-----------|  la note cible
-G|--7b(9)-------|  tu vises ce son</pre><p class="cap">Joue la cible d'abord. Un bend se règle à l'oreille, jamais à la distance.</p><h5>L'harmonique pincée</h5><p class="cap">Le pouce de la main droite effleure la corde juste après le médiator. Balaie lentement la zone entre le micro et le chevalet jusqu'à ce que ça crie.</p></div><div class="f-col"><h5>À la maison</h5><div class="devoir"><b>1.</b> Bend d'un ton case 7 corde de sol. Vérifie avec la case 9 avant chaque essai.<br><b>2.</b> Vibrato : <b>quatre oscillations exactement</b>, au métronome. Ensuite seulement, joue-le librement.<br><b>3.</b> Une phrase de quatre notes, jouée à plat / avec bend / avec vibrato / avec les deux.</div></div></div>
+G|--7b(9)-------|  tu vises ce son</pre><p class="cap">Joue la cible d'abord. Un bend se règle à l'oreille, jamais à la distance.</p><h5>L'harmonique pincée</h5><p class="cap">Le pouce de la main droite effleure la corde juste après le médiator. Balaie lentement la zone entre le micro et le chevalet jusqu'à ce que ça crie.</p></div><div class="f-col"><h5>À la maison</h5><div class="devoir"><b>1.</b> Bend d'un ton case 7 corde de Sol. Vérifie avec la case 9 avant chaque essai.<br><b>2.</b> Vibrato : <b>quatre oscillations exactement</b>, au métronome. Ensuite seulement, joue-le librement.<br><b>3.</b> Une phrase de quatre notes, jouée à plat / avec bend / avec vibrato / avec les deux.</div></div></div>
   </div>
  </div>
 </section>
@@ -622,7 +696,7 @@ G|--7b(9)-------|  tu vises ce son</pre><p class="cap">Joue la cible d'abord. Un
    </div>
    <div class="etape" data-type="jeu" data-dur="12" style="--dur:12">
     <div class="tick"><span>14</span></div>
-    <div class="corps"><h4>Une gamme pour toute la grille</h4><p>Sur la grille de la séance VII, la pentatonique de mi mineur passe du début à la fin. Il n'a rien à changer quand les accords bougent.</p></div>
+    <div class="corps"><h4>Une gamme pour toute la grille</h4><p>Sur la grille de la séance VII, la pentatonique de Mi mineur passe du début à la fin. Il n'a rien à changer quand les accords bougent.</p></div>
     <div class="marge"><div class="note"><b>Il change de gamme à chaque accord</b>Pas encore. Une gamme sur toute la grille d'abord ; suivre les accords viendra dans un an.</div></div>
    </div>
    <div class="etape" data-type="morceau" data-dur="14" style="--dur:14">
@@ -632,7 +706,7 @@ G|--7b(9)-------|  tu vises ce son</pre><p class="cap">Joue la cible d'abord. Un
    </div>
    <div class="etape" data-type="morceau" data-dur="12" style="--dur:12">
     <div class="tick"><span>40</span></div>
-    <div class="corps"><h4>Sur la grille du solo</h4><p>Mi 7 ♯9, sol, la. Plus court, plus dur, plus gratifiant. La gamme blues de la séance III y trouve tout son sens.</p></div>
+    <div class="corps"><h4>Sur la grille du solo</h4><p>E7♯9, G, A. Plus court, plus dur, plus gratifiant. La gamme blues de la séance III y trouve tout son sens.</p></div>
     <div class="marge"></div>
    </div>
    <div class="etape" data-type="jeu" data-dur="4" style="--dur:4">
@@ -647,7 +721,7 @@ G|--7b(9)-------|  tu vises ce son</pre><p class="cap">Joue la cible d'abord. Un
    </div>
    <div class="fin-heure"><div class="tick"><span>60</span></div><div></div></div>
   </div>
-  <div class="s-pied"><div class="p-lab">Si ça ne se passe pas comme prévu</div><div class="p-body"><p><b>Techniquement, ce qui manque après ces dix heures :</b> les deux positions de pentatonique restantes, les accords de septième mineurs et majeurs, le jeu en doubles-cordes, et l'arpège de l'accord plutôt que la gamme.</p><p><b>Musicalement :</b> jouer sur des grilles qui ne sont pas des blues. C'est le vrai saut suivant, et il est plus grand que tout ce qu'on a fait ici.</p><p><b>Le reste :</b> jouer avec un batteur, ne serait-ce qu'une fois. Une heure avec une batterie apprend plus sur le placement que six mois de métronome.</p></div></div>
+  <div class="s-pied"><div class="p-lab">Si ça ne se passe pas comme prévu</div><div class="p-body"><p><b>Techniquement, ce qui manque après ces dix heures :</b> les deux positions de pentatonique restantes, les accords de septième mineurs et majeurs, le jeu en <b>doubles-cordes</b> — deux notes jouées ensemble au lieu d'une, ce qui remplit le son quand on joue seul — et l'arpège de l'accord plutôt que la gamme, c'est-à-dire viser les notes de l'accord qui passe au lieu de dérouler une gamme par-dessus tout.</p><p><b>Musicalement :</b> jouer sur des grilles qui ne sont pas des blues. C'est le vrai saut suivant, et il est plus grand que tout ce qu'on a fait ici.</p><p><b>Le reste :</b> jouer avec un batteur, ne serait-ce qu'une fois. Une heure avec une batterie apprend plus sur le placement que six mois de métronome.</p></div></div>
   <div class="feuille">
    <div class="f-cut"><span>à détacher</span></div>
    <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Séance X — improviser</span><button class="f-print" type="button">Exporter cette feuille en PDF</button></div>
@@ -660,12 +734,12 @@ G|--7b(9)-------|  tu vises ce son</pre><p class="cap">Joue la cible d'abord. Un
 <div class="tablewrap"><table class="recap"><thead><tr><th>N°</th><th>Ce qu'on ajoute</th><th>Main droite</th><th>Le morceau</th><th>Ce qu'on chronomètre</th></tr></thead><tbody>
 <tr><td>I</td><td data-label="Ce qu'on ajoute"><b>Les notes du manche</b>, tons et demi-tons</td><td data-label="Main droite">—</td><td data-label="Le morceau">Poser un barré sur un accord annoncé</td><td data-label="Ce qu'on chronomètre">Trouver une note sur mi et sur la</td></tr>
 <tr><td>II</td><td data-label="Ce qu'on ajoute"><b>Pentatonique positions V et VIII</b></td><td data-label="Main droite">—</td><td data-label="Le morceau">Impro blues en changeant de position</td><td data-label="Ce qu'on chronomètre">Monter en V, descendre en VIII sans trou</td></tr>
-<tr><td>III</td><td data-label="Ce qu'on ajoute"><b>La blue note</b> (mi♭), atteinte au bend</td><td data-label="Main droite">—</td><td data-label="Le morceau">Blues en la, deux blue notes maximum</td><td data-label="Ce qu'on chronomètre">Le bend d'un demi-ton, juste</td></tr>
+<tr><td>III</td><td data-label="Ce qu'on ajoute"><b>La blue note</b> (Mi♭), atteinte au bend</td><td data-label="Main droite">—</td><td data-label="Le morceau">Blues en la, deux blue notes maximum</td><td data-label="Ce qu'on chronomètre">Le bend d'un demi-ton, juste</td></tr>
 <tr><td>IV</td><td data-label="Ce qu'on ajoute">Rien à la main gauche</td><td data-label="Main droite"><b>Aller-retour strict, mouvement perpétuel</b></td><td data-label="Le morceau">Un riff connu, rejoué en aller-retour</td><td data-label="Ce qu'on chronomètre">Le tempo où le chromatique reste propre</td></tr>
 <tr><td>V</td><td data-label="Ce qu'on ajoute"><b>Accords de sixte</b> A6 G6 D6 C6 E6</td><td data-label="Main droite">Le shuffle à ♩=100</td><td data-label="Le morceau">La grille de douze mesures, accompagnée</td><td data-label="Ce qu'on chronomètre">La grille entière sans s'arrêter</td></tr>
 <tr><td>VI</td><td data-label="Ce qu'on ajoute"><b>Le turnaround</b> descendant</td><td data-label="Main droite">Une position par temps</td><td data-label="Le morceau">Douze mesures, trois fois d'affilée</td><td data-label="Ce qu'on chronomètre">Le nombre d'arrêts. Objectif zéro</td></tr>
 <tr><td>VII</td><td data-label="Ce qu'on ajoute"><b>La grille de quintes</b> C G D A E</td><td data-label="Main droite">—</td><td data-label="Le morceau">« Hey Joe », en ouvert puis en barrés</td><td data-label="Ce qu'on chronomètre">Cinq accords en boucle sans se perdre</td></tr>
-<tr><td>VIII</td><td data-label="Ce qu'on ajoute"><b>Mi 7 ♯9</b>, l'accord de Hendrix</td><td data-label="Main droite">Court et sec, jamais tenu</td><td data-label="Le morceau">La grille E7♯9 – G – A</td><td data-label="Ce qu'on chronomètre">Quatre cordes qui sonnent, deux étouffées</td></tr>
+<tr><td>VIII</td><td data-label="Ce qu'on ajoute"><b>E7♯9</b>, l'accord de Hendrix</td><td data-label="Main droite">Court et sec, jamais tenu</td><td data-label="Le morceau">La grille E7♯9 – G – A</td><td data-label="Ce qu'on chronomètre">Quatre cordes qui sonnent, deux étouffées</td></tr>
 <tr><td>IX</td><td data-label="Ce qu'on ajoute"><b>Bend, quart de ton, vibrato, slide</b></td><td data-label="Main droite">Le poignet, pas le doigt</td><td data-label="Le morceau">Une phrase jouée de quatre façons</td><td data-label="Ce qu'on chronomètre">Un bend d'un ton réglé à l'oreille</td></tr>
 <tr><td>X</td><td data-label="Ce qu'on ajoute">Rien, on assemble</td><td data-label="Main droite">L'échauffement à garder</td><td data-label="Le morceau">Impro sur les deux grilles, enregistrée</td><td data-label="Ce qu'on chronomètre"><b>Deux mesures de silence sur douze</b></td></tr>
 </tbody></table></div></div></section>

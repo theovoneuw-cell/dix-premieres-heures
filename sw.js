@@ -2,7 +2,7 @@
 // Stratégie : cache d'abord, réseau ensuite. L'app fonctionne en avion.
 // ⚠ Incrémenter CACHE à chaque modification de contenu, sinon les appareils
 //   où la PWA est déjà installée continuent de servir l'ancienne version.
-const CACHE = 'guitare-v3';
+const CACHE = 'guitare-v4';
 const ASSETS = [
   './', './index.html', './intermediaire.html',
   './assets.css', './app.js', './manifest.webmanifest',

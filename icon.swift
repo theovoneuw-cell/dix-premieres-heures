@@ -5,9 +5,9 @@ func c(_ hex: UInt32) -> CGColor {
     CGColor(red: CGFloat((hex >> 16) & 0xFF)/255, green: CGFloat((hex >> 8) & 0xFF)/255,
             blue: CGFloat(hex & 0xFF)/255, alpha: 1)
 }
-let fond   = c(0x1F5A6B)   // pétrole : couleur du volet débutant
-let cordes = c(0xF2F2EF)   // papier
-let repere = c(0xC4553C)   // brique : couleur du volet intermédiaire
+let fond   = c(0x0E9E68)   // vert vif : couleur du volet débutant
+let cordes = c(0xFFFFFF)   // blanc
+let repere = c(0xEE5F35)   // corail : couleur du volet intermédiaire
 
 func draw(_ s: CGFloat, _ path: String) {
     let ctx = CGContext(data: nil, width: Int(s), height: Int(s), bitsPerComponent: 8,

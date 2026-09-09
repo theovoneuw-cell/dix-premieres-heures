@@ -12,8 +12,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Guitare">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="theme-color" content="#F2F2EF" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#101215" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F4F8F6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B1210" media="(prefers-color-scheme: dark)">
 <meta property="og:title" content="Les dix premières heures">
 <meta property="og:description" content="Dix séances d'une heure pour démarrer un guitariste débutant : déroulé minuté côté prof, feuille détachable côté élève, tout en tablature.">
 <link rel="stylesheet" href="assets.css">
@@ -31,7 +31,7 @@
   </div>
 </header>
 <div class="mast-strip"><div class="wrap"><div class="cell"><b>Pour qui</b>Ados et adultes qui n'ont jamais touché une guitare. Folk ou électrique, les deux sont prévus.</div><div class="cell"><b>Comment ça se lit</b>L'heure descend en colonne. Les problèmes sont accrochés dans la marge, à la minute où ils arrivent.</div><div class="cell"><b>La feuille du bas</b>Elle se détache, s'exporte en PDF et se donne à l'élève en partant.</div></div></div>
-<nav class="nav" aria-label="Séances"><div class="wrap"><span class="navlabel">Sommaire</span><a href="#avant">Avant</a>
+<nav class="nav" aria-label="Séances"><div class="wrap"><span class="navlabel">Sommaire</span><a href="#notes">Notes &amp; accords</a><a href="#avant">Avant</a>
 <a href="#s1">01</a>
 <a href="#s2">02</a>
 <a href="#s3">03</a>
@@ -44,6 +44,80 @@
 <a href="#s10">10</a>
 <a href="#recap">Récap</a></div></nav>
 <main>
+<section class="reference" id="notes">
+ <div class="wrap">
+  <div class="feuille">
+   <div class="f-cut"><span>à détacher</span></div>
+   <div class="f-head"><span class="f-lab">À envoyer avant le premier cours</span>
+    <span class="f-t">Notes et accords — la correspondance</span>
+    <button class="f-print" type="button">Exporter cette feuille en PDF</button></div>
+   <div class="f-cols">
+    <div class="f-col">
+     <h5>Les sept notes</h5>
+     <pre class="tab">français   Do  Ré  Mi  Fa  Sol  La  Si
+anglais     C   D   E   F   G    A   B</pre>
+     <p class="cap">Do commence à C, puis on avance dans l'alphabet. Il n'y a rien d'autre à retenir.</p>
+     <h5>Les altérations</h5>
+     <pre class="tab">Do♯ = C♯      Ré♭ = D♭
+Ré♯ = D♯      Mi♭ = E♭
+Fa♯ = F♯      Sol♭ = G♭
+Sol♯ = G♯     La♭ = A♭
+La♯ = A♯      Si♭ = B♭</pre>
+     <p class="cap">♯ dièse : une case plus haut. ♭ bémol : une case plus bas. La même case porte les deux noms.</p>
+     <p class="cap"><b>Attention :</b> entre Mi et Fa, et entre Si et Do, il n'y a pas de case intermédiaire. Ce sont les deux seuls endroits.</p>
+    </div>
+    <div class="f-col">
+     <h5>Les six cordes à vide</h5>
+     <pre class="tab">6e  la plus grosse   Mi    E
+5e                   La    A
+4e                   Ré    D
+3e                   Sol   G
+2e                   Si    B
+1re la plus fine     Mi    E</pre>
+     <h5>Comment se dit un nom d'accord</h5>
+     <pre class="tab">écrit       on dit
+C           « do »
+Cm          « do mineur »
+C7          « do sept »
+Cmaj7       « do majeur sept »
+Csus4       « do sus quatre »
+Cadd9       « do add neuf »
+C6          « do six »
+E7♯9        « mi sept dièse neuf »
+C♯          « do dièse »
+D♭          « ré bémol »</pre>
+     <p class="cap">La lettre donne la note de départ, ce qui suit décrit la couleur de l'accord. Une lettre seule veut toujours dire majeur.</p>
+     <p class="cap"><b>On écrit la lettre anglaise, on dit la note française.</b> Tout le monde écrit C7 et dit « do sept ». À l'oral on abrège : « sept », pas « septième ».</p>
+    </div>
+    <div class="f-col">
+     <h5>Tous les accords des vingt séances</h5>
+     <pre class="tab">Em      Mi mineur
+Am      La mineur
+Dm      Ré mineur
+Bm      Si mineur
+
+C       Do majeur
+D       Ré majeur
+E       Mi majeur
+G       Sol majeur
+A       La majeur
+F       Fa majeur
+
+A7      La septième
+D7      Ré septième
+E7      Mi septième
+Cadd9   Do add9
+
+A6 G6   La et Sol sixte
+D6 C6   Ré et Do sixte
+E6      Mi sixte
+E7♯9    Mi septième dièse neuf</pre>
+     <div class="devoir">Sur tout le site, <b>les accords sont écrits en lettres</b>, comme sur les tablatures que tu trouveras partout. <b>Les notes et les cordes restent en français.</b> C'est la seule convention à connaître, et c'est celle de la quasi-totalité des guitaristes.</div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
 <section class="intro" id="avant">
  <div class="wrap">
   <div class="lede-bloc">
@@ -80,9 +154,9 @@
       <ul>
         <li>Une appli d'accordeur sur son téléphone. GuitarTuna, Fender Tune, peu importe. C'est lui qui accorde.</li>
         <li>Des médiators 0,73 mm. Les 0,46 gratuits du magasin sont trop souples et faussent le geste.</li>
-        <li>Un capo à pince correct, Shubb ou Kyser, autour de 20 €. Les pinces à 5 € désaccordent la guitare.</li>
+        
         <li>Un carnet, ou une note épinglée sur son téléphone.</li>
-        <li>Un jeu de cordes neuf s'il n'en a jamais changé. Sur une guitare achetée il y a six mois, le mi grave est mort.</li>
+        <li>Un jeu de cordes neuf s'il n'en a jamais changé. Sur une guitare achetée il y a six mois, le mi grave est mort.</li><li><b>En bonus, et pas avant la séance 8 :</b> un capo. Un Shubb ou un Kyser autour de 20 € tient l'accord, les pinces à 5 € font faux. Mais rien ne presse, et il peut emprunter le tien le jour où on l'utilise.</li>
       </ul>
     </div>
     <div class="p-col">
@@ -106,7 +180,7 @@
 </section>
 <section class="seance" id="s1">
  <div class="wrap">
-  <header class="s-head"><div class="s-num">01</div><div class="s-titre"><h2>Deux accords et un accordeur</h2><p class="objectif">Il repart en sachant accorder seul, tenir un médiator, et boucler <em>Mi mineur → La mineur</em> sans regarder ses doigts en permanence.</p></div><div class="s-meta"><span class="m-lab">Guitare en main</span><span class="m-val">—</span></div></header>
+  <header class="s-head"><div class="s-num">01</div><div class="s-titre"><h2>Deux accords et un accordeur</h2><p class="objectif">Il repart en sachant accorder seul, tenir un médiator, et boucler <em>Em → Am</em> sans regarder ses doigts en permanence.</p></div><div class="s-meta"><span class="m-lab">Guitare en main</span><span class="m-val">—</span></div></header>
   <div class="heure">
    <div class="etape" data-type="cadre" data-dur="4" style="--dur:4">
     <div class="tick"><span>0</span></div>
@@ -125,7 +199,7 @@
    </div>
    <div class="etape" data-type="jeu" data-dur="13" style="--dur:13">
     <div class="tick"><span>19</span></div>
-    <div class="corps"><h4>Mi mineur, puis La mineur</h4><p>Deux doigts, puis trois. On fait sonner corde par corde et on corrige avant d'enchaîner.</p></div>
+    <div class="corps"><h4>Em, puis Am</h4><p>Deux doigts, puis trois. On fait sonner corde par corde et on corrige avant d'enchaîner.</p></div>
     <div class="marge"><div class="note"><b>Ça frise, ça sonne mat</b>Le doigt est trop loin de la frette. Fais-le glisser vers la barrette jusqu'à ce que la note sorte, sans appuyer davantage. Qu'il sente lui-même la différence.</div><div class="note"><b>Un doigt étouffe la corde voisine</b>Poignet plus bas et poussé vers l'avant, doigts sur la pointe. Et ongles de la main gauche coupés avant le prochain cours, sinon il n'y arrivera pas.</div></div>
    </div>
    <div class="etape" data-type="jeu" data-dur="14" style="--dur:14">
@@ -145,7 +219,7 @@
    </div>
    <div class="fin-heure"><div class="tick"><span>60</span></div><div></div></div>
   </div>
-  <div class="s-pied"><div class="p-lab">Si ça ne se passe pas comme prévu</div><div class="p-body"><p><b>Ado en électrique :</b> son clair, pas de saturation aujourd'hui. Avec la disto il n'entend pas ses cordes mortes et il ne corrige rien.</p><p><b>Adulte qui veut comprendre :</b> donne-lui le nom des six cordes, et rien d'autre. Le reste attendra la séance 8.</p><p><b>Si les deux accords ne rentrent pas :</b> garde Mi mineur seul et passe le temps restant sur la main droite.</p></div></div>
+  <div class="s-pied"><div class="p-lab">Si ça ne se passe pas comme prévu</div><div class="p-body"><p><b>Ado en électrique :</b> son clair, pas de saturation aujourd'hui. Avec la disto il n'entend pas ses cordes mortes et il ne corrige rien.</p><p><b>Adulte qui veut comprendre :</b> donne-lui le nom des six cordes, et rien d'autre. Le reste attendra la séance 8.</p><p><b>Si les deux accords ne rentrent pas :</b> garde Em seul et passe le temps restant sur la main droite.</p></div></div>
   <div class="feuille">
    <div class="f-cut"><span>à détacher</span></div>
    <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Cours 1 — les deux premiers accords</span><button class="f-print" type="button">Exporter cette feuille en PDF</button></div>
@@ -169,12 +243,12 @@
    </div>
    <div class="etape" data-type="jeu" data-dur="12" style="--dur:12">
     <div class="tick"><span>10</span></div>
-    <div class="corps"><h4>Ré majeur</h4><p>Le triangle. C'est l'accord qui pose le plus de problèmes au début, le mi aigu se fait écraser par l'annulaire.</p></div>
+    <div class="corps"><h4>L'accord de D</h4><p>Le triangle. C'est l'accord qui pose le plus de problèmes au début, le mi aigu se fait écraser par l'annulaire.</p></div>
     <div class="marge"><div class="note"><b>Sur Ré, le mi aigu ne sonne pas</b>L'annulaire s'affale dessus. Il faut le cambrer et rentrer le coude vers le corps. Fais-lui jouer l'accord corde par corde en nommant les notes à voix haute.</div></div>
    </div>
    <div class="etape" data-type="jeu" data-dur="10" style="--dur:10">
     <div class="tick"><span>22</span></div>
-    <div class="corps"><h4>Sol majeur</h4><p>Version trois doigts (320003). La version quatre doigts viendra plus tard, quand elle servira à enchaîner avec Cadd9.</p></div>
+    <div class="corps"><h4>L'accord de G</h4><p>Version trois doigts (320003). La version quatre doigts viendra plus tard, quand elle servira à enchaîner avec Cadd9.</p></div>
     <div class="marge"><div class="note"><b>Sur Sol, l'annulaire n'atteint pas la case 3</b>Fais-lui poser l'annulaire en premier, les autres suivent. Le doigt le plus lent se place d'abord.</div></div>
    </div>
    <div class="etape" data-type="montre" data-dur="6" style="--dur:6">
@@ -184,12 +258,12 @@
    </div>
    <div class="etape" data-type="jeu" data-dur="8" style="--dur:8">
     <div class="tick"><span>38</span></div>
-    <div class="corps"><h4>La pompe</h4><p>Sur un seul accord d'abord, puis en changeant tous les quatre temps.</p></div>
+    <div class="corps"><h4>La rythmique de base</h4><p>Sur un seul accord d'abord, puis en changeant tous les quatre temps.</p></div>
     <div class="marge"><div class="note"><b>La main droite s'arrête pendant le changement</b>Le problème durera trois mois, donc autant commencer maintenant. Il joue la boucle en relevant complètement la main gauche sur le dernier temps de chaque mesure. La main droite continue dans le vide.</div><div class="note"><b>Il change d'accord trop tard</b>Le changement se prépare sur le temps 4. Compte « 1, 2, 3, prêt » à voix haute pendant qu'il joue.</div></div>
    </div>
    <div class="etape" data-type="morceau" data-dur="10" style="--dur:10">
     <div class="tick"><span>46</span></div>
-    <div class="corps"><h4>« Knockin' on Heaven's Door »</h4><p>Sol, Ré, La mineur, une mesure chacun. Le passage sur Do arrive plus tard dans le morceau : il rejoue La mineur à la place, ça passe très bien.</p></div>
+    <div class="corps"><h4>« Knockin' on Heaven's Door »</h4><p>G, D, Am, une mesure chacun. Le passage sur C arrive plus tard dans le morceau : il rejoue Am à la place, ça passe très bien.</p></div>
     <div class="marge"></div>
    </div>
    <div class="etape" data-type="cadre" data-dur="4" style="--dur:4">
@@ -202,14 +276,14 @@
   <div class="s-pied"><div class="p-lab">Si ça ne se passe pas comme prévu</div><div class="p-body"><p><b>Si les quatre accords ne rentrent pas :</b> tu en gardes trois et tu reportes. Prendre un cours de retard n'a aucune conséquence.</p><p><b>C'est aussi le cours où on voit si l'instrument est jouable.</b> Si Ré et Sol sont impossibles alors que les doigts sont bien placés, regarde la hauteur des cordes à la troisième case.</p><p><b>S'il joue déjà les quatre proprement :</b> n'avance pas dans le programme, serre sur place. Deux temps par accord au lieu de quatre. Le palier du débutant, c'est la vitesse de changement.</p></div></div>
   <div class="feuille">
    <div class="f-cut"><span>à détacher</span></div>
-   <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Cours 2 — la pompe</span><button class="f-print" type="button">Exporter cette feuille en PDF</button></div>
-   <div class="f-cols"><div class="f-col"><h5>Les accords du jour</h5><div class="accords"><span class="accord" data-chord="D"></span><span class="accord" data-chord="G"></span></div><h5>La rythmique « pompe »</h5><div class="rythme" data-p="D-DU-UDU"></div><p class="cap">Les flèches pâles : la main descend ou remonte, mais rate les cordes exprès. Elle ne s'arrête pas.</p></div><div class="f-col"><h5>Le morceau</h5><div class="grille"><span>G</span><span>D</span><span>Am</span><span>Am</span></div><p class="cap">« Knockin' on Heaven's Door ». Quatre temps par case, en boucle.</p><h5>À retenir</h5><ul><li>Le changement se prépare sur le 4<sup>e</sup> temps.</li><li>La main droite ne s'arrête jamais, même à vide.</li></ul></div><div class="f-col"><h5>À la maison</h5><div class="devoir"><b>1.</b> La pompe sur un seul accord, deux minutes sans t'arrêter.<br><b>2.</b> La grille à 60 bpm, en relevant la main gauche sur le 4<sup>e</sup> temps.<br><b>3.</b> Chrono : Sol → Ré en une minute → <span class="mono">______</span></div></div></div>
+   <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Cours 2 — la rythmique de base</span><button class="f-print" type="button">Exporter cette feuille en PDF</button></div>
+   <div class="f-cols"><div class="f-col"><h5>Les accords du jour</h5><div class="accords"><span class="accord" data-chord="D"></span><span class="accord" data-chord="G"></span></div><h5>La rythmique de base</h5><div class="rythme" data-p="D-DU-UDU"></div><p class="cap">Les flèches pâles : la main descend ou remonte, mais rate les cordes exprès. Elle ne s'arrête pas.</p></div><div class="f-col"><h5>Le morceau</h5><div class="grille"><span>G</span><span>D</span><span>Am</span><span>Am</span></div><p class="cap">« Knockin' on Heaven's Door ». Quatre temps par case, en boucle.</p><h5>À retenir</h5><ul><li>Le changement se prépare sur le 4<sup>e</sup> temps.</li><li>La main droite ne s'arrête jamais, même à vide.</li></ul></div><div class="f-col"><h5>À la maison</h5><div class="devoir"><b>1.</b> La rythmique sur un seul accord, deux minutes sans t'arrêter.<br><b>2.</b> La grille à 60 bpm, en relevant la main gauche sur le 4<sup>e</sup> temps.<br><b>3.</b> Chrono : Sol → Ré en une minute → <span class="mono">______</span></div></div></div>
   </div>
  </div>
 </section>
 <section class="seance" id="s3">
  <div class="wrap">
-  <header class="s-head"><div class="s-num">03</div><div class="s-titre"><h2>Do, La, et la boucle qui tourne partout</h2><p class="objectif">Deux accords de plus, et surtout <em>Sol – Ré – Mi mineur – Do</em>. À partir de là il peut accompagner un nombre considérable de chansons, et il faut qu'il s'en rende compte pendant la séance.</p></div><div class="s-meta"><span class="m-lab">Guitare en main</span><span class="m-val">—</span></div></header>
+  <header class="s-head"><div class="s-num">03</div><div class="s-titre"><h2>Do, La, et la boucle qui tourne partout</h2><p class="objectif">Deux accords de plus, et surtout <em>G – D – Em – C</em>. À partir de là il peut accompagner un nombre considérable de chansons, et il faut qu'il s'en rende compte pendant la séance.</p></div><div class="s-meta"><span class="m-lab">Guitare en main</span><span class="m-val">—</span></div></header>
   <div class="heure">
    <div class="etape" data-type="cadre" data-dur="6" style="--dur:6">
     <div class="tick"><span>0</span></div>
@@ -218,22 +292,22 @@
    </div>
    <div class="etape" data-type="jeu" data-dur="10" style="--dur:10">
     <div class="tick"><span>6</span></div>
-    <div class="corps"><h4>Do majeur</h4><p>Puis montre-lui Cadd9 (x32033) : depuis Sol, seuls deux doigts bougent. Laisse-le choisir lequel des deux il gardera.</p></div>
+    <div class="corps"><h4>L'accord de C</h4><p>Puis montre-lui Cadd9 (x32033) : depuis Sol, seuls deux doigts bougent. Laisse-le choisir lequel des deux il gardera.</p></div>
     <div class="marge"><div class="note"><b>Sur Do, la corde de La sonne à vide</b>L'annulaire est mal placé, ou le poignet est trop haut. Vérifie corde par corde à chaque cours pendant un mois, sinon la faute s'installe pour des années.</div></div>
    </div>
    <div class="etape" data-type="jeu" data-dur="8" style="--dur:8">
     <div class="tick"><span>16</span></div>
-    <div class="corps"><h4>La majeur</h4><p>Trois doigts dans la même case. Avec de gros doigts, propose le doigté index-majeur-annulaire, ou l'index à plat sur les trois cordes.</p></div>
+    <div class="corps"><h4>L'accord de A</h4><p>Trois doigts dans la même case. Avec de gros doigts, propose le doigté index-majeur-annulaire, ou l'index à plat sur les trois cordes.</p></div>
     <div class="marge"><div class="note"><b>Les trois doigts ne tiennent pas dans la case</b>Change le doigté plutôt que d'insister. Index-majeur-annulaire libère beaucoup de place.</div></div>
    </div>
    <div class="etape" data-type="jeu" data-dur="16" style="--dur:16">
     <div class="tick"><span>24</span></div>
-    <div class="corps"><h4>La boucle Sol – Ré – Em – Do</h4><p>Une mesure chacun, à la pompe, très lentement. C'est le cœur de la séance, ne l'écourte pas même si ça paraît ingrat.</p></div>
-    <div class="marge"><div class="note"><b>La boucle s'écroule au retour sur Sol</b>Do → Sol est le passage difficile des quatre. Isole-le, une dizaine de fois, sans rythme, avant de remettre la boucle entière.</div><div class="note"><b>Il ne quitte pas ses doigts des yeux</b>Quatre mesures les yeux fermés. Il va se planter, c'est prévu.</div></div>
+    <div class="corps"><h4>La boucle G – D – Em – C</h4><p>Une mesure chacun, avec la rythmique de base, très lentement. C'est le cœur de la séance, ne l'écourte pas même si ça paraît ingrat.</p></div>
+    <div class="marge"><div class="note"><b>La boucle s'écroule au retour sur Sol</b>C → G est le passage difficile des quatre. Isole-le, une dizaine de fois, sans rythme, avant de remettre la boucle entière.</div><div class="note"><b>Il ne quitte pas ses doigts des yeux</b>Quatre mesures les yeux fermés. Il va se planter, c'est prévu.</div></div>
    </div>
    <div class="etape" data-type="morceau" data-dur="12" style="--dur:12">
     <div class="tick"><span>40</span></div>
-    <div class="corps"><h4>Deux morceaux, une seule grille</h4><p>« No Woman No Cry » sur Sol – Ré – Em – Do, puis « Zombie » sur Em – Do – Sol – Ré. Fais-lui remarquer que c'est la même boucle démarrée ailleurs. Ça lui fera gagner du temps pour tout le reste.</p></div>
+    <div class="corps"><h4>Deux morceaux, une seule grille</h4><p>« No Woman No Cry » sur G – D – Em – C, puis « Redemption Song » sur G – Em – C – D. Même auteur, mêmes quatre accords, ordre différent. Fais-lui trouver ce qui a changé avant de le lui dire : ça lui fera gagner du temps pour tout le reste.</p></div>
     <div class="marge"></div>
    </div>
    <div class="etape" data-type="jeu" data-dur="5" style="--dur:5">
@@ -248,11 +322,11 @@
    </div>
    <div class="fin-heure"><div class="tick"><span>60</span></div><div></div></div>
   </div>
-  <div class="s-pied"><div class="p-lab">Si ça ne se passe pas comme prévu</div><div class="p-body"><p><b>Si Do ne passe pas :</b> donne-lui Cadd9 et laisse tomber Do pour l'instant. Il sonne très bien dans la boucle, et il le retrouvera de toute façon dans « Wonderwall » au cours 8.</p><p><b>Ado qui s'ennuie sur les accords ouverts :</b> montre-lui la date du cours 6 sur cette page, promets-lui l'électrique, et tiens bon. Sans cette boucle il ne pourra accompagner personne.</p></div></div>
+  <div class="s-pied"><div class="p-lab">Si ça ne se passe pas comme prévu</div><div class="p-body"><p><b>Si Do ne passe pas :</b> donne-lui Cadd9 et laisse tomber Do pour l'instant. Il sonne très bien dans la boucle, et il le retrouvera de toute façon au cours 8, dès qu'on mettra un capo.</p><p><b>Ado qui s'ennuie sur les accords ouverts :</b> montre-lui la date du cours 6 sur cette page, promets-lui l'électrique, et tiens bon. Sans cette boucle il ne pourra accompagner personne.</p></div></div>
   <div class="feuille">
    <div class="f-cut"><span>à détacher</span></div>
    <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Cours 3 — la boucle des quatre accords</span><button class="f-print" type="button">Exporter cette feuille en PDF</button></div>
-   <div class="f-cols"><div class="f-col"><h5>Les accords du jour</h5><div class="accords"><span class="accord" data-chord="C"></span><span class="accord" data-chord="Cadd9"></span><span class="accord" data-chord="A"></span></div></div><div class="f-col"><h5>La grille à connaître par cœur</h5><div class="grille"><span>G</span><span>D</span><span>Em</span><span>C</span></div><p class="cap">« No Woman No Cry ». Décale le départ et tu as « Zombie » : Em – C – G – D. Même boucle.</p><h5>Ce qu'on a vu</h5><ul><li>Cadd9 s'enchaîne avec Sol en ne bougeant que deux doigts.</li><li>Le passage difficile, c'est Do → Sol. Travaille-le seul.</li></ul></div><div class="f-col"><h5>À la maison</h5><div class="devoir"><b>1.</b> La boucle à 60 bpm, quatre temps par accord. Puis deux temps.<br><b>2.</b> Do → Sol, isolé, une cinquantaine de fois.<br><b>3.</b> Trouve deux morceaux que tu aimes qui tournent sur ces quatre accords, et apporte-les.</div></div></div>
+   <div class="f-cols"><div class="f-col"><h5>Les accords du jour</h5><div class="accords"><span class="accord" data-chord="C"></span><span class="accord" data-chord="Cadd9"></span><span class="accord" data-chord="A"></span></div></div><div class="f-col"><h5>La grille à connaître par cœur</h5><div class="grille"><span>G</span><span>D</span><span>Em</span><span>C</span></div><p class="cap">« No Woman No Cry ». Change l'ordre et tu as « Redemption Song » : G – Em – C – D. Deux chansons du même auteur, les mêmes quatre accords.</p><h5>Ce qu'on a vu</h5><ul><li>Cadd9 s'enchaîne avec Sol en ne bougeant que deux doigts.</li><li>Le passage difficile, c'est C → G. Travaille-le seul.</li></ul></div><div class="f-col"><h5>À la maison</h5><div class="devoir"><b>1.</b> La boucle à 60 bpm, quatre temps par accord. Puis deux temps.<br><b>2.</b> C → G, isolé, une cinquantaine de fois.<br><b>3.</b> Trouve deux morceaux que tu aimes qui tournent sur ces quatre accords, et apporte-les.</div></div></div>
   </div>
  </div>
 </section>
@@ -277,7 +351,7 @@
    </div>
    <div class="etape" data-type="jeu" data-dur="12" style="--dur:12">
     <div class="tick"><span>18</span></div>
-    <div class="corps"><h4>Trois rythmiques</h4><p>La pompe, la version avec étouffées sur 2 et 4, et une à contretemps. Une seule doit être tenue en fin d'heure, les deux autres sont là pour l'oreille.</p></div>
+    <div class="corps"><h4>Trois rythmiques</h4><p>La rythmique de base, la version avec étouffées sur 2 et 4, et une à contretemps. Une seule doit être tenue en fin d'heure, les deux autres sont là pour l'oreille.</p></div>
     <div class="marge"><div class="note"><b>Il attaque les six cordes sur tous les accords</b>Do démarre à la corde de La, Ré à la corde de Ré. À reprendre systématiquement, sinon la basse est fausse en permanence.</div></div>
    </div>
    <div class="etape" data-type="morceau" data-dur="14" style="--dur:14">
@@ -301,7 +375,7 @@
   <div class="feuille">
    <div class="f-cut"><span>à détacher</span></div>
    <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Cours 4 — la main droite</span><button class="f-print" type="button">Exporter cette feuille en PDF</button></div>
-   <div class="f-cols"><div class="f-col"><h5>Rythmique 1 — la pompe</h5><div class="rythme" data-p="D-DU-UDU"></div><h5>Rythmique 2 — avec étouffées</h5><div class="rythme" data-p="DUxUDUxU"></div><p class="cap">Les <span class="mono">×</span> : la paume droite vient claquer sur les cordes.</p><h5>Rythmique 3 — le contretemps</h5><div class="rythme" data-p="D--UD-U-"></div></div><div class="f-col"><h5>La règle du moulin</h5><ul><li>La main droite descend et remonte en croches, en continu.</li><li>Pour jouer une rythmique, on enlève des frappes. On n'ajoute pas de mouvement.</li><li>Si la main s'arrête, le tempo s'arrête.</li></ul></div><div class="f-col"><h5>À la maison</h5><div class="devoir"><b>1.</b> Rythmique 2 sur un seul accord, trois minutes sans arrêt.<br><b>2.</b> Joue par-dessus le vrai morceau dans tes enceintes, pas au métronome.<br><b>3.</b> Enregistre-toi trente secondes et réécoute. C'est désagréable et c'est l'exercice le plus utile de la semaine.</div></div></div>
+   <div class="f-cols"><div class="f-col"><h5>Rythmique 1 — celle du cours 2</h5><div class="rythme" data-p="D-DU-UDU"></div><h5>Rythmique 2 — avec étouffées</h5><div class="rythme" data-p="DUxUDUxU"></div><p class="cap">Les <span class="mono">×</span> : la paume droite vient claquer sur les cordes.</p><h5>Rythmique 3 — le contretemps</h5><div class="rythme" data-p="D--UD-U-"></div></div><div class="f-col"><h5>La règle du moulin</h5><ul><li>La main droite descend et remonte en croches, en continu.</li><li>Pour jouer une rythmique, on enlève des frappes. On n'ajoute pas de mouvement.</li><li>Si la main s'arrête, le tempo s'arrête.</li></ul></div><div class="f-col"><h5>À la maison</h5><div class="devoir"><b>1.</b> Rythmique 2 sur un seul accord, trois minutes sans arrêt.<br><b>2.</b> Joue par-dessus le vrai morceau dans tes enceintes, pas au métronome.<br><b>3.</b> Enregistre-toi trente secondes et réécoute. C'est désagréable et c'est l'exercice le plus utile de la semaine.</div></div></div>
   </div>
  </div>
 </section>
@@ -321,12 +395,12 @@
    </div>
    <div class="etape" data-type="montre" data-dur="8" style="--dur:8">
     <div class="tick"><span>10</span></div>
-    <div class="corps"><h4>La position de la main droite</h4><p>Pouce sur mi, la ou ré selon l'accord. Index sur sol, majeur sur si, annulaire sur mi aigu. La position ne bouge pas : on ne cherche pas les cordes.</p></div>
+    <div class="corps"><h4>La position de la main droite</h4><p>Pouce sur Mi, La ou Ré selon l'accord. Index sur Sol, majeur sur Si, annulaire sur Mi aigu. La position ne bouge pas : on ne cherche pas les cordes.</p></div>
     <div class="marge"><div class="note"><b>Le pouce et l'index se rentrent dedans</b>Le pouce doit passer devant l'index. Écarte-lui la main une fois, physiquement : le geste se corrige ensuite tout seul.</div><div class="note"><b>Il regarde sa main droite</b>La main droite ne se regarde pas. C'est le bon moment pour installer l'habitude, avant qu'elle ne se prenne dans l'autre sens.</div></div>
    </div>
    <div class="etape" data-type="jeu" data-dur="12" style="--dur:12">
     <div class="tick"><span>18</span></div>
-    <div class="corps"><h4>L'arpège de base</h4><p>Basse, sol, si, mi, si, sol, sur La mineur. Puis sur Do, Sol, Mi mineur, sans changer la main droite.</p></div>
+    <div class="corps"><h4>L'arpège de base</h4><p>Basse, Sol, Si, Mi, Si, Sol, sur Am. Puis sur C, G, Em, sans changer la main droite.</p></div>
     <div class="marge"><div class="note"><b>Des cordes mortes apparaissent partout</b>Elles étaient déjà là, la rythmique les couvrait. Reprends chaque accord corde par corde.</div></div>
    </div>
    <div class="etape" data-type="jeu" data-dur="12" style="--dur:12">
@@ -350,13 +424,13 @@
   <div class="feuille">
    <div class="f-cut"><span>à détacher</span></div>
    <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Cours 5 — les arpèges</span><button class="f-print" type="button">Exporter cette feuille en PDF</button></div>
-   <div class="f-cols"><div class="f-col"><h5>La main droite, position fixe</h5><ul><li><b>p</b> — pouce : cordes mi, la, ré (la basse)</li><li><b>i</b> — index : corde de sol</li><li><b>m</b> — majeur : corde de si</li><li><b>a</b> — annulaire : corde de mi aigu</li></ul></div><div class="f-col"><h5>L'arpège de base — sur La mineur</h5><pre class="tab">      p  i  m  a  m  i
+   <div class="f-cols"><div class="f-col"><h5>La main droite, position fixe</h5><ul><li><b>p</b> — pouce : cordes Mi, La, Ré (la basse)</li><li><b>i</b> — index : corde de Sol</li><li><b>m</b> — majeur : corde de Si</li><li><b>a</b> — annulaire : corde de Mi aigu</li></ul></div><div class="f-col"><h5>L'arpège de base — sur Am</h5><pre class="tab">      p  i  m  a  m  i
 e|--------------0--------|
 B|-----------1-----1-----|
 G|--------2-----------2--|
 D|-----2-----------------|
 A|--0--------------------|
-E|-----------------------|</pre><h5>La boucle</h5><div class="grille"><span>Am</span><span>C</span><span>G</span><span>Em</span></div><p class="cap">Même arpège sur les quatre. Seule la basse au pouce change de corde.</p></div><div class="f-col"><h5>À la maison</h5><div class="devoir"><b>1.</b> L'arpège sur La mineur, deux minutes, sans regarder la main droite.<br><b>2.</b> La boucle complète, très lentement, sans t'arrêter entre les accords.<br><b>3.</b> Reprends chaque accord corde par corde. Celles qui ne sonnent pas s'entendent maintenant.</div></div></div>
+E|-----------------------|</pre><h5>La boucle</h5><div class="grille"><span>Am</span><span>C</span><span>G</span><span>Em</span></div><p class="cap">Même arpège sur les quatre. Seule la basse au pouce change de corde.</p></div><div class="f-col"><h5>À la maison</h5><div class="devoir"><b>1.</b> L'arpège sur Am, deux minutes, sans regarder la main droite.<br><b>2.</b> La boucle complète, très lentement, sans t'arrêter entre les accords.<br><b>3.</b> Reprends chaque accord corde par corde. Celles qui ne sonnent pas s'entendent maintenant.</div></div></div>
   </div>
  </div>
 </section>
@@ -441,7 +515,7 @@ E|--5----3----1----0--|</pre><p class="cap">Deux doigts, une seule forme. Tu la 
    </div>
    <div class="etape" data-type="jeu" data-dur="14" style="--dur:14">
     <div class="tick"><span>33</span></div>
-    <div class="corps"><h4>Le riff boogie</h4><p>Deux doigts qui alternent sur la corde de la, puis transposé sur ré et sur mi grave.</p></div>
+    <div class="corps"><h4>Le riff boogie</h4><p>Deux doigts qui alternent sur la corde de La, puis transposé sur ré et sur mi grave.</p></div>
     <div class="marge"><div class="note"><b>Il perd ses repères en transposant</b>Fais-lui nommer la case de départ à voix haute avant chaque changement. Les repères du manche, 5<sup>e</sup> et 7<sup>e</sup> case, servent à ça.</div><div class="note"><b>L'auriculaire n'atteint pas la case 4</b>Il peut prendre l'annulaire pendant quinze jours, mais dis-lui que l'objectif reste l'auriculaire. Sinon il ne s'en servira jamais.</div></div>
    </div>
    <div class="etape" data-type="morceau" data-dur="9" style="--dur:9">
@@ -496,36 +570,36 @@ E|--0--0--0--0--0--0--0--|</pre><p class="cap">Même forme, on descend d'une cor
    </div>
    <div class="etape" data-type="jeu" data-dur="9" style="--dur:9">
     <div class="tick"><span>25</span></div>
-    <div class="corps"><h4>Descendre vers le Fa</h4><p>Case 5, 4, 3, 2, 1. Ça sonnera de moins en moins bien. Dis-le avant, pas après.</p></div>
-    <div class="marge"><div class="note"><b>Le manche remonte pendant l'effort</b>L'épaule gauche monte et le coude sort. Coude collé au corps, épaule redescendue.</div><div class="note"><b>Il veut faire le Fa case 1 tout de suite</b>Non. Case 5 pendant deux semaines. Le Fa case 1 est le barré le plus dur du manche.</div></div>
+    <div class="corps"><h4>Descendre jusqu'à F</h4><p>Case 5, 4, 3, 2, 1. Ça sonnera de moins en moins bien. Dis-le avant, pas après.</p></div>
+    <div class="marge"><div class="note"><b>Le manche remonte pendant l'effort</b>L'épaule gauche monte et le coude sort. Coude collé au corps, épaule redescendue.</div><div class="note"><b>Il veut faire F case 1 tout de suite</b>Non. Case 5 pendant deux semaines. F case 1 est le barré le plus dur du manche.</div></div>
    </div>
    <div class="etape" data-type="jeu" data-dur="7" style="--dur:7">
     <div class="tick"><span>34</span></div>
-    <div class="corps"><h4>Le Fa à quatre cordes</h4><p>xx3211. C'est sa solution pour les douze mois qui viennent, et il joue du Fa dès aujourd'hui dans un vrai morceau.</p></div>
+    <div class="corps"><h4>Le F à quatre cordes</h4><p>xx3211. C'est sa solution pour les douze mois qui viennent, et il joue un F dès aujourd'hui dans un vrai morceau.</p></div>
     <div class="marge"></div>
    </div>
    <div class="etape" data-type="montre" data-dur="6" style="--dur:6">
     <div class="tick"><span>41</span></div>
-    <div class="corps"><h4>Le capo</h4><p>Capo case 2 avec les accords de Sol : on entend du La. Une case = un demi-ton. Trente secondes d'explication suffisent.</p></div>
+    <div class="corps"><h4>Le capo</h4><p>Capo case 2 avec les accords de G : ça sonne en A. Une case = un demi-ton. Trente secondes d'explication suffisent.</p></div>
     <div class="marge"></div>
    </div>
    <div class="etape" data-type="morceau" data-dur="10" style="--dur:10">
     <div class="tick"><span>47</span></div>
-    <div class="corps"><h4>« Wonderwall » capo 2</h4><p>Ou « Let It Be » avec le Fa à quatre cordes.</p></div>
+    <div class="corps"><h4>« Stand By Me »</h4><p>C – Am – F – G, la même boucle sur tout le morceau. Le Fa est le seul accord nouveau : il a les trois autres depuis le cours 3. Et pour le capo, pas besoin d'un autre titre : reprends « No Woman No Cry », capo case 2. Mêmes doigtés exactement, et il sonne en la.</p></div>
     <div class="marge"></div>
    </div>
    <div class="etape" data-type="cadre" data-dur="3" style="--dur:3">
     <div class="tick"><span>57</span></div>
-    <div class="corps"><h4>Le morceau du cours 10</h4><p>Il le choisit aujourd'hui. Il a deux séances pour le préparer, et c'est à toi de vérifier qu'il est à sa portée.</p></div>
+    <div class="corps"><h4>Le morceau du cours 10</h4><p>Il le choisit aujourd'hui. Il a deux séances pour le préparer, et c'est à toi de vérifier qu'il est à sa portée. La liste des morceaux jouables avec ce qu'il a est en bas du cours 10.</p></div>
     <div class="marge"></div>
    </div>
    <div class="fin-heure"><div class="tick"><span>60</span></div><div></div></div>
   </div>
-  <div class="s-pied"><div class="p-lab">Si ça ne se passe pas comme prévu</div><div class="p-body"><p><b>Petites mains, ou main peu tonique :</b> vérifie l'action avant de conclure quoi que ce soit. Sur beaucoup d'instruments d'entrée de gamme les cordes sont trop hautes, et personne ne peut barrer là-dessus. Un réglage règle ce que dix cours ne régleront pas.</p><p><b>S'il se décourage :</b> passe au capo et au Fa à quatre cordes, referme le sujet pour aujourd'hui, rouvre-le dans un mois. Insister ne sert à rien.</p></div></div>
+  <div class="s-pied"><div class="p-lab">Si ça ne se passe pas comme prévu</div><div class="p-body"><p><b>Petites mains, ou main peu tonique :</b> vérifie l'action avant de conclure quoi que ce soit. Sur beaucoup d'instruments d'entrée de gamme les cordes sont trop hautes, et personne ne peut barrer là-dessus. Un réglage règle ce que dix cours ne régleront pas.</p><p><b>S'il se décourage :</b> passe au capo et au F à quatre cordes, referme le sujet pour aujourd'hui, rouvre-le dans un mois. Insister ne sert à rien.</p></div></div>
   <div class="feuille">
    <div class="f-cut"><span>à détacher</span></div>
    <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Cours 8 — le barré et le capo</span><button class="f-print" type="button">Exporter cette feuille en PDF</button></div>
-   <div class="f-cols"><div class="f-col"><h5>Les accords du jour</h5><div class="accords"><span class="accord" data-chord="F4"></span><span class="accord" data-chord="F"></span><span class="accord" data-chord="Bm"></span></div></div><div class="f-col"><h5>Les formes mobiles</h5><ul><li><b>Forme de Mi</b> barrée : case 1 = Fa, case 3 = Sol, case 5 = La, case 8 = Do.</li><li><b>Forme de La</b> barrée : case 2 = Si, case 3 = Do, case 5 = Ré.</li><li>Deux formes, tous les accords majeurs du manche.</li></ul><h5>Le capo</h5><ul><li>Capo case 2, tu joues <b>Sol</b> → on entend <b>La</b>.</li><li>Capo case 2, tu joues <b>Do</b> → on entend <b>Ré</b>.</li><li>Une case = un demi-ton.</li></ul></div><div class="f-col"><h5>À la maison</h5><div class="devoir"><b>1.</b> Barré case 5 uniquement, corde par corde. Deux minutes par jour, pas plus, c'est fatigant.<br><b>2.</b> Le Fa à quatre cordes dans un vrai morceau, dès cette semaine.<br><b>3.</b> Choisis ton morceau du cours 10. En entier, du début à la fin. Tu as deux séances.</div></div></div>
+   <div class="f-cols"><div class="f-col"><h5>Les accords du jour</h5><div class="accords"><span class="accord" data-chord="F4"></span><span class="accord" data-chord="F"></span><span class="accord" data-chord="Bm"></span></div></div><div class="f-col"><h5>Les formes mobiles</h5><ul><li><b>Forme de E</b> barrée : case 1 = F, case 3 = G, case 5 = A, case 8 = C.</li><li><b>Forme de A</b> barrée : case 2 = B, case 3 = C, case 5 = D.</li><li>Deux formes, tous les accords majeurs du manche.</li></ul><h5>Le morceau</h5><div class="grille"><span>C</span><span>C</span><span>Am</span><span>Am</span><span>F</span><span>G</span><span>C</span><span>C</span></div><p class="cap">« Stand By Me ». Deux mesures par accord, en boucle du début à la fin. Le Fa est le seul accord que tu ne connaissais pas.</p><h5>Le capo</h5><ul><li>Capo case 2, tu joues <b>G</b> → ça sonne en <b>A</b>.</li><li>Capo case 2, tu joues <b>C</b> → ça sonne en <b>D</b>.</li><li>Une case = un demi-ton.</li></ul></div><div class="f-col"><h5>À la maison</h5><div class="devoir"><b>1.</b> Barré case 5 uniquement, corde par corde. Deux minutes par jour, pas plus, c'est fatigant.<br><b>2.</b> Le F à quatre cordes dans un vrai morceau, dès cette semaine.<br><b>3.</b> Choisis ton morceau du cours 10. En entier, du début à la fin. Tu as deux séances.</div></div></div>
   </div>
  </div>
 </section>
@@ -540,22 +614,22 @@ E|--0--0--0--0--0--0--0--|</pre><p class="cap">Même forme, on descend d'une cor
    </div>
    <div class="etape" data-type="jeu" data-dur="9" style="--dur:9">
     <div class="tick"><span>4</span></div>
-    <div class="corps"><h4>La boîte de La mineur pentatonique, case 5</h4><p>Monter, descendre, en croches, lentement. Cinq notes, deux par corde. Aucun travail de vitesse.</p></div>
+    <div class="corps"><h4>La pentatonique de La mineur, case 5</h4><p>Monter, descendre, en croches, lentement. Un point de vocabulaire, parce que c'est là qu'ils se perdent tous : il a <b>douze cases</b> sous les doigts, deux par corde, mais seulement <b>cinq notes différentes</b> — La, Do, Ré, Mi, Sol. La même note revient à plusieurs endroits du manche. Aucun travail de vitesse aujourd'hui.</p></div>
     <div class="marge"></div>
    </div>
    <div class="etape" data-type="jeu" data-dur="11" style="--dur:11">
     <div class="tick"><span>13</span></div>
-    <div class="corps"><h4>Hammer-on, pull-off, bend</h4><p>Puis le bend d'un ton sur la corde de sol, case 7. Trois doigts poussent ensemble, le poignet tourne.</p></div>
+    <div class="corps"><h4>Hammer-on, pull-off, bend</h4><p>Puis le bend d'un ton sur la corde de Sol, case 7. Trois doigts poussent ensemble, le poignet tourne.</p></div>
     <div class="marge"><div class="note"><b>Le bend n'arrive pas au ton</b>Trois doigts poussent, le poignet tourne comme une clé. Donne-lui la note cible à l'oreille : il doit viser un son, pas une distance.</div><div class="note"><b>Le hammer-on ne sonne pas</b>Le doigt tombe, il ne se pose pas. Geste vertical et sec, à travailler sans médiator.</div></div>
    </div>
    <div class="etape" data-type="jeu" data-dur="9" style="--dur:9">
     <div class="tick"><span>24</span></div>
-    <div class="corps"><h4>Trois phrases de quatre notes</h4><p>Tu en joues trois, il les répète. Puis il en invente une quatrième, sans que tu annonces que c'est de l'impro.</p></div>
-    <div class="marge"><div class="note"><b>Il monte et descend la boîte en boucle</b>Interdis-lui la moitié des notes. Cinq notes disponibles au lieu de douze, et il se met à faire des phrases presque tout de suite.</div></div>
+    <div class="corps"><h4>Trois phrases, puis une quatrième</h4><p>Tu joues une phrase de quatre notes, il la rejoue à l'identique. Puis une deuxième, puis une troisième. Ensuite seulement, tu lui demandes d'en fabriquer une quatrième tout seul. Ne prononce pas le mot « improviser » : il bloque la moitié des élèves, et à ce stade il ne fait que répéter un exercice de plus.</p></div>
+    <div class="marge"><div class="note"><b>Il monte et descend la boîte au lieu de faire des phrases</b>Réduis le terrain : interdis-lui les trois cordes graves. Il ne lui reste que six cases au lieu de douze, et les phrases apparaissent presque tout de suite. Moins il a de choix, plus il fait de la musique.</div></div>
    </div>
    <div class="etape" data-type="morceau" data-dur="15" style="--dur:15">
     <div class="tick"><span>33</span></div>
-    <div class="corps"><h4>Il joue, tu accompagnes</h4><p>La grille du cours 7. Règle du jour, énoncée sérieusement : trois notes sur les douze mesures.</p></div>
+    <div class="corps"><h4>Il improvise, tu accompagnes</h4><p>La grille de blues du cours 7, celle en douze mesures. Tu tiens l'accompagnement, il joue par-dessus. La consigne du jour, à énoncer sérieusement : <b>trois notes en tout sur la grille entière</b>. Pas trois par mesure — trois, du début à la fin des douze mesures.</p></div>
     <div class="marge"><div class="note"><b>Il ne s'arrête jamais de jouer</b>Impose un silence complet sur les mesures 5 et 6. Il détestera sur le moment.</div></div>
    </div>
    <div class="etape" data-type="jeu" data-dur="8" style="--dur:8">
@@ -580,7 +654,7 @@ G|-----------5--7----------|
 D|--------5--7-------------|
 A|-----5--7----------------|
 E|--5--8-------------------|</pre><p class="cap">Cinq notes, deux par corde. Monte, puis redescends. Lentement.</p></div><div class="f-col"><h5>Les trois articulations</h5><pre class="tab">  hammer   pull     bend
-G|--5h7--|--7p5--|--7b(9)--|</pre><ul><li><b>h</b> : le doigt tombe sur la case, sec. Un seul coup de médiator.</li><li><b>p</b> : le doigt tire la corde vers le bas en se retirant.</li><li><b>b</b> : trois doigts poussent, le poignet tourne. Vise le son, pas la distance.</li></ul></div><div class="f-col"><h5>La règle du jour</h5><div class="devoir"><b>Trois notes.</b> Sur douze mesures entières, tu as le droit de jouer trois notes. Choisis-les, place-les où tu veux.<br><br><b>À la maison :</b> enregistre douze mesures d'accords sur ton téléphone et joue dessus cinq minutes par jour.</div></div></div>
+G|--5h7--|--7p5--|--7b(9)--|</pre><ul><li><b>h</b> : le doigt tombe sur la case, sec. Un seul coup de médiator.</li><li><b>p</b> : le doigt tire la corde vers le bas en se retirant.</li><li><b>b</b> : trois doigts poussent, le poignet tourne. Vise le son, pas la distance.</li></ul></div><div class="f-col"><h5>La règle du jour</h5><div class="devoir"><b>Trois notes en tout.</b> Sur les douze mesures de la grille, tu as le droit de jouer trois notes. Pas trois par mesure : trois du début à la fin. Choisis-les bien, place-les où tu veux.<br><br><b>À la maison :</b> enregistre douze mesures d'accords sur ton téléphone et joue dessus cinq minutes par jour.</div></div></div>
   </div>
  </div>
 </section>
@@ -620,7 +694,21 @@ G|--5h7--|--7p5--|--7b(9)--|</pre><ul><li><b>h</b> : le doigt tombe sur la case,
    </div>
    <div class="fin-heure"><div class="tick"><span>60</span></div><div></div></div>
   </div>
-  <div class="s-pied"><div class="p-lab">Si ça ne se passe pas comme prévu</div><div class="p-body"><p><b>Techniquement, ce qui manque :</b> le barré propre, trois mois. Les accords de septième et les mineurs septième. Le travis picking. Une deuxième position de pentatonique.</p><p><b>Musicalement :</b> se constituer un répertoire d'une dizaine de morceaux jouables de mémoire, n'importe où.</p><p><b>Le reste :</b> trouver quelqu'un avec qui jouer. Rien ne fait progresser un débutant aussi vite, et rien ne le fait tenir aussi longtemps.</p></div></div>
+  <div class="s-pied"><div class="p-lab">Si ça ne se passe pas comme prévu</div><div class="p-body"><p><b>Techniquement, ce qui manque :</b> le barré propre, trois mois. Les accords de septième et les mineurs septième. Le <b>travis picking</b> : le pouce alterne deux basses sans jamais s'arrêter pendant que les doigts jouent la mélodie entre les temps. Ça donne l'impression de deux guitaristes qui jouent ensemble, et c'est la base de tout le jeu folk et country. Une deuxième position de pentatonique.</p><p><b>Musicalement :</b> se constituer un répertoire d'une dizaine de morceaux jouables de mémoire, n'importe où.</p><p><b>Le reste :</b> trouver quelqu'un avec qui jouer. Rien ne fait progresser un débutant aussi vite, et rien ne le fait tenir aussi longtemps.</p></div></div>
+<div class="s-pied"><div class="p-lab">Des morceaux qui tiennent avec ce qu'il a</div><div class="p-body">
+<p><b>Le critère n'est pas la difficulté du morceau, c'est le nombre de changements d'accord par minute.</b> Un morceau lent à quatre accords est plus jouable qu'un morceau rapide à trois. Fais-le choisir au cours 8 pour qu'il ait deux séances devant lui.</p>
+<p><b>Quatre accords ouverts et la rythmique de base — le choix le plus sûr.</b><br>
+Sur <b>G – D – Em – C</b> : « No Woman No Cry », « Redemption Song », « Perfect » d'Ed Sheeran, « Take Me Home, Country Roads ».<br>
+Sur <b>C – Am – F – G</b>, avec le F à quatre cordes du cours 8 : « Stand By Me », « Let It Be », « L'hymne de nos campagnes » de Tryo.<br>
+À trois accords : « Wild Thing » (A – D – E), « Bad Moon Rising » (D – A – G), « Sweet Home Alabama » (D – C – G), « Knockin' on Heaven's Door » (G – D – Am).</p>
+<p><b>S'il a accroché aux arpèges du cours 5.</b><br>
+« Je l'aime à mourir » de Cabrel, au capo. L'intro de « Nothing Else Matters ». « A Horse With No Name », qu'il joue depuis le premier cours et qu'il peut maintenant jouer aux doigts.</p>
+<p><b>S'il est en électrique.</b><br>
+« Seven Nation Army », « Come As You Are », « Smoke on the Water », « Smells Like Teen Spirit ». Et deux morceaux entiers, pas seulement un riff : « Blitzkrieg Bop » des Ramones et « Should I Stay or Should I Go » des Clash, tous les deux en quintes avec palm mute.</p>
+<p><b>S'il a accroché au blues du cours 7.</b><br>
+Un blues instrumental en La : il tient la grille, tu prends le solo, puis vous échangez. C'est le seul de la liste où il joue <em>avec</em> quelqu'un plutôt que devant quelqu'un, et à ce stade ça vaut plus que le reste.</p>
+<p><b>Ce qu'il faut refuser, même s'il le demande.</b> Tout ce qui exige un barré tenu longtemps — son barré a deux semaines. Le travis picking, donc « Dust in the Wind » et « Blackbird ». Et tout morceau à plus de six accords : il ne l'aura pas mémorisé en deux séances, et il arrivera au cours 10 avec un morceau à moitié su.</p>
+</div></div>
   <div class="feuille">
    <div class="f-cut"><span>à détacher</span></div>
    <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Cours 10 — ton échauffement, à garder</span><button class="f-print" type="button">Exporter cette feuille en PDF</button></div>
@@ -640,13 +728,13 @@ E|--1--2--3--4--2--3--4--5-----|
 <header class="s-head"><div class="s-num">&#8635;</div><div class="s-titre"><h2>Les dix séances sur une page</h2><p class="objectif">À imprimer et à glisser dans la housse. La colonne de droite est celle qui compte le plus : c'est ce qui donne à l'élève un chiffre à battre entre deux cours.</p></div><div class="s-meta"></div></header>
 <div class="tablewrap"><table class="recap"><thead><tr><th>N°</th><th>Ce qu'on ajoute</th><th>Main droite</th><th>Le morceau</th><th>Ce qu'on chronomètre</th></tr></thead><tbody>
 <tr><td>01</td><td data-label="Ce qu'on ajoute"><b>Em, Am</b></td><td data-label="Main droite">Coups vers le bas, une frappe par temps</td><td data-label="Le morceau">« A Horse With No Name », tu joues, il tient la boucle</td><td data-label="Ce qu'on chronomètre">Changements Em → Am en 1 min</td></tr>
-<tr><td>02</td><td data-label="Ce qu'on ajoute"><b>D, G</b></td><td data-label="Main droite">La pompe, le principe du moulin</td><td data-label="Le morceau">« Knockin' on Heaven's Door »</td><td data-label="Ce qu'on chronomètre">Changements G → D en 1 min</td></tr>
-<tr><td>03</td><td data-label="Ce qu'on ajoute"><b>C, Cadd9, A</b></td><td data-label="Main droite">La pompe, deux temps par accord</td><td data-label="Le morceau">« No Woman No Cry » et « Zombie », même grille</td><td data-label="Ce qu'on chronomètre">La boucle G–D–Em–C sans rupture</td></tr>
+<tr><td>02</td><td data-label="Ce qu'on ajoute"><b>D, G</b></td><td data-label="Main droite">La rythmique de base, le principe du moulin</td><td data-label="Le morceau">« Knockin' on Heaven's Door »</td><td data-label="Ce qu'on chronomètre">Changements G → D en 1 min</td></tr>
+<tr><td>03</td><td data-label="Ce qu'on ajoute"><b>C, Cadd9, A</b></td><td data-label="Main droite">La rythmique de base, deux temps par accord</td><td data-label="Le morceau">« No Woman No Cry » et « Redemption Song », mêmes accords</td><td data-label="Ce qu'on chronomètre">La boucle G–D–Em–C sans rupture</td></tr>
 <tr><td>04</td><td data-label="Ce qu'on ajoute">Rien, et c'est voulu</td><td data-label="Main droite"><b>Étouffées, contretemps, jeu sur enregistrement</b></td><td data-label="Le morceau">Un morceau qu'il a apporté</td><td data-label="Ce qu'on chronomètre">2 min de rythmique sans dérive de tempo</td></tr>
 <tr><td>05</td><td data-label="Ce qu'on ajoute">Rien à la main gauche</td><td data-label="Main droite"><b>Arpèges aux doigts, p-i-m-a</b></td><td data-label="Le morceau">« Je l'aime à mourir » ou « Nothing Else Matters »</td><td data-label="Ce qu'on chronomètre">La boucle en arpèges, sans blanc entre accords</td></tr>
 <tr><td>06</td><td data-label="Ce qu'on ajoute"><b>Quintes mobiles</b>, lecture de tablature</td><td data-label="Main droite">Palm mute, coups vers le bas</td><td data-label="Le morceau">Smoke on the Water, Seven Nation Army, Come As You Are</td><td data-label="Ce qu'on chronomètre">Un riff joué en entier, à tempo</td></tr>
 <tr><td>07</td><td data-label="Ce qu'on ajoute"><b>A7, D7, E7</b>, le riff boogie</td><td data-label="Main droite">Le shuffle</td><td data-label="Le morceau">La grille de 12 mesures, à deux</td><td data-label="Ce qu'on chronomètre">12 mesures sans se perdre, sans compter</td></tr>
-<tr><td>08</td><td data-label="Ce qu'on ajoute"><b>Barré, Fa 4 cordes, Bm</b>, le capo</td><td data-label="Main droite">Rien de neuf</td><td data-label="Le morceau">« Wonderwall » capo 2, ou « Let It Be »</td><td data-label="Ce qu'on chronomètre">Barré case 5 : combien de cordes sonnent</td></tr>
+<tr><td>08</td><td data-label="Ce qu'on ajoute"><b>Barré, F 4 cordes, Bm</b>, le capo</td><td data-label="Main droite">Rien de neuf</td><td data-label="Le morceau">« Stand By Me », et le capo sur un morceau déjà su</td><td data-label="Ce qu'on chronomètre">Barré case 5 : combien de cordes sonnent</td></tr>
 <tr><td>09</td><td data-label="Ce qu'on ajoute"><b>Pentatonique de La mineur</b>, h / p / bend</td><td data-label="Main droite">Le placement</td><td data-label="Le morceau">Impro sur la grille blues, trois notes autorisées</td><td data-label="Ce qu'on chronomètre">12 mesures avec du silence dedans</td></tr>
 <tr><td>10</td><td data-label="Ce qu'on ajoute">Rien, bilan et suite</td><td data-label="Main droite">L'échauffement de 10 min, à garder</td><td data-label="Le morceau">Son morceau, en entier, enregistré</td><td data-label="Ce qu'on chronomètre"><b>Le nombre d'arrêts. Objectif zéro.</b></td></tr>
 </tbody></table></div></div></section>
