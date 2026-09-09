@@ -54,6 +54,20 @@ Le script vérifie que chaque séance fait bien 60 minutes et affiche le nombre 
 minutes où l'élève a l'instrument en main — la règle du site est de ne jamais
 descendre sous 35.
 
+## Prévisualiser avant de publier
+
+```
+python3 build/serve.py 8000
+```
+
+Puis http://localhost:8000/. Le serveur envoie `no-store` et déclare les bons types
+MIME — le serveur Python de base sert `.webmanifest` en binaire, ce qui casse
+l'installation de la PWA.
+
+Le service worker ne s'enregistre pas sur `localhost` et s'y désinscrit s'il traîne
+d'une session précédente : sans ça il servirait son cache et masquerait les
+modifications en cours.
+
 **Après toute modification de contenu, incrémenter `CACHE` dans `sw.js`**
 (`guitare-v3` → `v4`). Sinon les appareils où la PWA est déjà installée continuent
 de servir l'ancienne version depuis leur cache, et le déploiement reste invisible

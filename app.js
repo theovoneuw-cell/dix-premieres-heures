@@ -132,10 +132,17 @@
     else if (mq.addListener) mq.addListener(onChange);
   }
 
-  /* ---------- service worker ---------- */
-  if ('serviceWorker' in navigator) {
+  /* ---------- service worker ----------
+     Jamais en local : il sert son cache en priorité, ce qui masquerait
+     les modifications pendant la prévisualisation. */
+  var local = ['localhost', '127.0.0.1', ''].indexOf(location.hostname) !== -1;
+  if ('serviceWorker' in navigator && !local) {
     addEventListener('load', function () {
       navigator.serviceWorker.register('sw.js').catch(function () {});
+    });
+  } else if (local && 'serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then(function (rs) {
+      rs.forEach(function (r) { r.unregister(); });
     });
   }
 })();
