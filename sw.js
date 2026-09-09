@@ -1,6 +1,6 @@
 // Tout le contenu tient dans index.html (polices comprises, en base64).
 // Stratégie : cache d'abord, réseau ensuite. L'app fonctionne en avion.
-const CACHE = 'dix-heures-v1';
+const CACHE = 'dix-heures-v2';
 const ASSETS = [
   './', './index.html', './manifest.webmanifest',
   './icons/apple-touch-icon.png', './icons/icon-192.png',

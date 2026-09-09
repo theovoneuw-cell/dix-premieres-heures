@@ -211,6 +211,17 @@ h1{font-size:clamp(46px,10vw,116px);line-height:.86;font-weight:700;letter-spaci
 .grille{display:flex;flex-wrap:wrap;gap:4px}
 .grille span{font-family:"Zilla Slab",serif;border:1px solid var(--sheet-rule);border-bottom:3px solid var(--brass);padding:6px 0;font-size:14px;font-weight:600;text-align:center;flex:1 0 46px}
 
+
+/* --- bouton d'export de la feuille élève --- */
+.f-print{
+  margin-left:auto;font-family:"Zilla Slab",serif;font-size:12.5px;font-weight:600;
+  color:var(--brass);background:none;border:1px solid var(--sheet-rule);
+  border-bottom-width:2px;padding:5px 11px;line-height:1.25;cursor:pointer;
+}
+.f-print:hover{background:color-mix(in srgb,var(--brass) 13%,transparent)}
+.f-print:active{transform:translateY(1px)}
+@media(max-width:640px){.f-print{margin-left:0;width:100%;padding:9px 11px;margin-top:4px}}
+
 /* ================= récap ================= */
 .recap-sec{padding-top:clamp(48px,6vw,80px);position:relative}
 .recap-sec::before{content:"";position:absolute;top:0;left:0;right:0;height:13px;background:repeating-linear-gradient(to bottom,var(--rule) 0 1px,transparent 1px 2.4px)}
@@ -261,6 +272,16 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:14px 40px}
   .mast-strip .cell{padding-right:0}
 }
 @media print{
+  @page{size:A4;margin:12mm}
+  .f-print{display:none!important}
+  .print-hidden{display:none!important}
+  /* export d'une seule feuille : elle occupe la page entière */
+  html.printing-sheet .feuille{border:0;box-shadow:none;margin:0;max-width:none;page-break-inside:auto}
+  html.printing-sheet .f-cut{display:none}
+  html.printing-sheet .f-head{padding-left:0;padding-right:0}
+  html.printing-sheet .f-col{padding:12px 11px 14px}
+  html.printing-sheet .f-col:first-child{padding-left:0}
+  html.printing-sheet .wrap{padding-left:0;padding-right:0}
   .nav{display:none}
   body{background:#fff;color:#000;font-size:10pt}
   .seance{page-break-before:always}
@@ -390,7 +411,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:14px 40px}
   <div class="s-pied"><div class="p-lab">Si ça ne se passe pas comme prévu</div><div class="p-body"><p><b>Ado en électrique :</b> son clair, pas de saturation aujourd'hui. Avec la disto il n'entend pas ses cordes mortes et il ne corrige rien.</p><p><b>Adulte qui veut comprendre :</b> donne-lui le nom des six cordes, et rien d'autre. Le reste attendra la séance 8.</p><p><b>Si les deux accords ne rentrent pas :</b> garde Mi mineur seul et passe le temps restant sur la main droite.</p></div></div>
   <div class="feuille">
    <div class="f-cut"><span>à détacher</span></div>
-   <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Cours 1 — les deux premiers accords</span></div>
+   <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Cours 1 — les deux premiers accords</span><button class="f-print" type="button">Exporter cette feuille en PDF</button></div>
    <div class="f-cols"><div class="f-col"><h5>Les accords du jour</h5><div class="accords"><span class="accord" data-chord="Em"></span><span class="accord" data-chord="Am"></span></div><h5>La main droite</h5><div class="rythme" data-p="D-D-D-D-"></div><p class="cap">Une frappe vers le bas par temps. Le pied bat avec.</p></div><div class="f-col"><h5>Ce qu'on a vu</h5><ul><li>Accorder : <span class="mono">Mi La Ré Sol Si Mi</span>, de la grosse à la fine.</li><li>Le doigt se pose juste derrière la frette, pas au milieu de la case.</li><li>Sur Am, on attaque à partir de la 5<sup>e</sup> corde (La).</li><li>Ongles courts à la main gauche.</li></ul></div><div class="f-col"><h5>À la maison</h5><div class="devoir"><b>10 minutes par jour</b>, six jours sur sept.<br><br><b>1.</b> Em, puis Am, corde par corde. Est-ce que les six sonnent ?<br><b>2.</b> Em → Am → Em → Am, quatre temps chacun, aussi lentement qu'il faut.<br><b>3.</b> Chrono : une minute, combien de changements propres ? → <span class="mono">______</span></div></div></div>
   </div>
  </div>
@@ -444,7 +465,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:14px 40px}
   <div class="s-pied"><div class="p-lab">Si ça ne se passe pas comme prévu</div><div class="p-body"><p><b>Si les quatre accords ne rentrent pas :</b> tu en gardes trois et tu reportes. Prendre un cours de retard n'a aucune conséquence.</p><p><b>C'est aussi le cours où on voit si l'instrument est jouable.</b> Si Ré et Sol sont impossibles alors que les doigts sont bien placés, regarde la hauteur des cordes à la troisième case.</p><p><b>S'il joue déjà les quatre proprement :</b> n'avance pas dans le programme, serre sur place. Deux temps par accord au lieu de quatre. Le palier du débutant, c'est la vitesse de changement.</p></div></div>
   <div class="feuille">
    <div class="f-cut"><span>à détacher</span></div>
-   <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Cours 2 — la pompe</span></div>
+   <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Cours 2 — la pompe</span><button class="f-print" type="button">Exporter cette feuille en PDF</button></div>
    <div class="f-cols"><div class="f-col"><h5>Les accords du jour</h5><div class="accords"><span class="accord" data-chord="D"></span><span class="accord" data-chord="G"></span></div><h5>La rythmique « pompe »</h5><div class="rythme" data-p="D-DU-UDU"></div><p class="cap">Les flèches pâles : la main descend ou remonte, mais rate les cordes exprès. Elle ne s'arrête pas.</p></div><div class="f-col"><h5>Le morceau</h5><div class="grille"><span>G</span><span>D</span><span>Am</span><span>Am</span></div><p class="cap">« Knockin' on Heaven's Door ». Quatre temps par case, en boucle.</p><h5>À retenir</h5><ul><li>Le changement se prépare sur le 4<sup>e</sup> temps.</li><li>La main droite ne s'arrête jamais, même à vide.</li></ul></div><div class="f-col"><h5>À la maison</h5><div class="devoir"><b>1.</b> La pompe sur un seul accord, deux minutes sans t'arrêter.<br><b>2.</b> La grille à 60 bpm, en relevant la main gauche sur le 4<sup>e</sup> temps.<br><b>3.</b> Chrono : Sol → Ré en une minute → <span class="mono">______</span></div></div></div>
   </div>
  </div>
@@ -493,7 +514,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:14px 40px}
   <div class="s-pied"><div class="p-lab">Si ça ne se passe pas comme prévu</div><div class="p-body"><p><b>Si Do ne passe pas :</b> donne-lui Cadd9 et laisse tomber Do pour l'instant. Il sonne très bien dans la boucle, et il le retrouvera de toute façon dans « Wonderwall » au cours 8.</p><p><b>Ado qui s'ennuie sur les accords ouverts :</b> montre-lui la date du cours 6 sur cette page, promets-lui l'électrique, et tiens bon. Sans cette boucle il ne pourra accompagner personne.</p></div></div>
   <div class="feuille">
    <div class="f-cut"><span>à détacher</span></div>
-   <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Cours 3 — la boucle des quatre accords</span></div>
+   <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Cours 3 — la boucle des quatre accords</span><button class="f-print" type="button">Exporter cette feuille en PDF</button></div>
    <div class="f-cols"><div class="f-col"><h5>Les accords du jour</h5><div class="accords"><span class="accord" data-chord="C"></span><span class="accord" data-chord="Cadd9"></span><span class="accord" data-chord="A"></span></div></div><div class="f-col"><h5>La grille à connaître par cœur</h5><div class="grille"><span>G</span><span>D</span><span>Em</span><span>C</span></div><p class="cap">« No Woman No Cry ». Décale le départ et tu as « Zombie » : Em – C – G – D. Même boucle.</p><h5>Ce qu'on a vu</h5><ul><li>Cadd9 s'enchaîne avec Sol en ne bougeant que deux doigts.</li><li>Le passage difficile, c'est Do → Sol. Travaille-le seul.</li></ul></div><div class="f-col"><h5>À la maison</h5><div class="devoir"><b>1.</b> La boucle à 60 bpm, quatre temps par accord. Puis deux temps.<br><b>2.</b> Do → Sol, isolé, une cinquantaine de fois.<br><b>3.</b> Trouve deux morceaux que tu aimes qui tournent sur ces quatre accords, et apporte-les.</div></div></div>
   </div>
  </div>
@@ -542,7 +563,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:14px 40px}
   <div class="s-pied"><div class="p-lab">Si ça ne se passe pas comme prévu</div><div class="p-body"><p><b>Si le contretemps ne rentre pas :</b> laisse tomber, il reviendra au cours 7 avec le shuffle.</p><p><b>S'il trouve la séance frustrante :</b> termine sur le morceau joué par-dessus l'enregistrement, et monte le volume.</p></div></div>
   <div class="feuille">
    <div class="f-cut"><span>à détacher</span></div>
-   <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Cours 4 — la main droite</span></div>
+   <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Cours 4 — la main droite</span><button class="f-print" type="button">Exporter cette feuille en PDF</button></div>
    <div class="f-cols"><div class="f-col"><h5>Rythmique 1 — la pompe</h5><div class="rythme" data-p="D-DU-UDU"></div><h5>Rythmique 2 — avec étouffées</h5><div class="rythme" data-p="DUxUDUxU"></div><p class="cap">Les <span class="mono">×</span> : la paume droite vient claquer sur les cordes.</p><h5>Rythmique 3 — le contretemps</h5><div class="rythme" data-p="D--UD-U-"></div></div><div class="f-col"><h5>La règle du moulin</h5><ul><li>La main droite descend et remonte en croches, en continu.</li><li>Pour jouer une rythmique, on enlève des frappes. On n'ajoute pas de mouvement.</li><li>Si la main s'arrête, le tempo s'arrête.</li></ul></div><div class="f-col"><h5>À la maison</h5><div class="devoir"><b>1.</b> Rythmique 2 sur un seul accord, trois minutes sans arrêt.<br><b>2.</b> Joue par-dessus le vrai morceau dans tes enceintes, pas au métronome.<br><b>3.</b> Enregistre-toi trente secondes et réécoute. C'est désagréable et c'est l'exercice le plus utile de la semaine.</div></div></div>
   </div>
  </div>
@@ -591,7 +612,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:14px 40px}
   <div class="s-pied"><div class="p-lab">Si ça ne se passe pas comme prévu</div><div class="p-body"><p><b>Ado en électrique qui trouve ça mou :</b> fais-lui l'arpège sur son ampli, son clair avec un peu de réverbe. Même exercice, réception complètement différente.</p><p><b>Si les quatre doigts ne se coordonnent pas :</b> réduis à trois, pouce-index-majeur. L'annulaire arrivera dans quinze jours.</p><p><b>Ongles de la main droite :</b> s'il veut les laisser pousser un peu, tant mieux. La pulpe suffit largement pour ce qu'on fait ici, ne fais pas de ça un sujet.</p></div></div>
   <div class="feuille">
    <div class="f-cut"><span>à détacher</span></div>
-   <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Cours 5 — les arpèges</span></div>
+   <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Cours 5 — les arpèges</span><button class="f-print" type="button">Exporter cette feuille en PDF</button></div>
    <div class="f-cols"><div class="f-col"><h5>La main droite, position fixe</h5><ul><li><b>p</b> — pouce : cordes mi, la, ré (la basse)</li><li><b>i</b> — index : corde de sol</li><li><b>m</b> — majeur : corde de si</li><li><b>a</b> — annulaire : corde de mi aigu</li></ul></div><div class="f-col"><h5>L'arpège de base — sur La mineur</h5><pre class="tab">      p  i  m  a  m  i
 e|--------------0--------|
 B|-----------1-----1-----|
@@ -646,7 +667,7 @@ E|-----------------------|</pre><h5>La boucle</h5><div class="grille"><span>Am</
   <div class="s-pied"><div class="p-lab">Si ça ne se passe pas comme prévu</div><div class="p-body"><p><b>S'il n'a qu'une folk :</b> les quintes sonnent pauvres sur cordes acier sans saturation, c'est normal. Garde les riffs, qui passent très bien en acoustique, et repousse les quintes au cours 8 où elles serviront de marchepied vers le barré.</p><p><b>Adulte que le rock n'intéresse pas :</b> ne saute pas la lecture de tablature, c'est ce qui le rendra autonome. Remplace les riffs par le décryptage en direct d'une tablature d'un morceau qu'il aime.</p></div></div>
   <div class="feuille">
    <div class="f-cut"><span>à détacher</span></div>
-   <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Cours 6 — quintes et tablature</span></div>
+   <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Cours 6 — quintes et tablature</span><button class="f-print" type="button">Exporter cette feuille en PDF</button></div>
    <div class="f-cols"><div class="f-col"><h5>Lire une tablature</h5><ul><li>Six lignes = six cordes. <b>La ligne du haut est le mi aigu</b>, la plus fine.</li><li>Le chiffre = la case. <span class="mono">0</span> = corde à vide.</li><li><span class="mono">h</span> hammer-on · <span class="mono">p</span> pull-off · <span class="mono">b</span> bend</li><li><span class="mono">/</span> <span class="mono">\</span> slide · <span class="mono">x</span> étouffée · <span class="mono">~</span> vibrato</li></ul></div><div class="f-col"><h5>La quinte (power chord)</h5><pre class="tab">   A5   G5   F5   E5
 e|--------------------|
 B|--------------------|
@@ -701,7 +722,7 @@ E|--5----3----1----0--|</pre><p class="cap">Deux doigts, une seule forme. Tu la 
   <div class="s-pied"><div class="p-lab">Si ça ne se passe pas comme prévu</div><div class="p-body"><p><b>S'il n'aime pas le blues :</b> ne lui vends pas le style. Cette grille et ce shuffle traînent dans une bonne partie du rock et de la variété qu'il écoute. Dis-le une fois et joue.</p><p><b>Si le riff ne passe pas :</b> garde-le sur La toute la séance et fais la grille en accords. Le riff transposé reviendra au cours 9.</p></div></div>
   <div class="feuille">
    <div class="f-cut"><span>à détacher</span></div>
-   <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Cours 7 — le blues en La</span></div>
+   <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Cours 7 — le blues en La</span><button class="f-print" type="button">Exporter cette feuille en PDF</button></div>
    <div class="f-cols"><div class="f-col"><h5>Les accords du jour</h5><div class="accords"><span class="accord" data-chord="A7"></span><span class="accord" data-chord="D7"></span><span class="accord" data-chord="E7"></span></div><h5>La grille — 12 mesures</h5><div class="grille"><span>A7</span><span>A7</span><span>A7</span><span>A7</span><span>D7</span><span>D7</span><span>A7</span><span>A7</span><span>E7</span><span>D7</span><span>A7</span><span>A7</span></div><p class="cap">Une case = une mesure = quatre temps.</p></div><div class="f-col"><h5>Le riff boogie</h5><pre class="tab">              (sur La)
 e|-----------------------|
 B|-----------------------|
@@ -766,7 +787,7 @@ E|--0--0--0--0--0--0--0--|</pre><p class="cap">Même forme, on descend d'une cor
   <div class="s-pied"><div class="p-lab">Si ça ne se passe pas comme prévu</div><div class="p-body"><p><b>Petites mains, ou main peu tonique :</b> vérifie l'action avant de conclure quoi que ce soit. Sur beaucoup d'instruments d'entrée de gamme les cordes sont trop hautes, et personne ne peut barrer là-dessus. Un réglage règle ce que dix cours ne régleront pas.</p><p><b>S'il se décourage :</b> passe au capo et au Fa à quatre cordes, referme le sujet pour aujourd'hui, rouvre-le dans un mois. Insister ne sert à rien.</p></div></div>
   <div class="feuille">
    <div class="f-cut"><span>à détacher</span></div>
-   <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Cours 8 — le barré et le capo</span></div>
+   <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Cours 8 — le barré et le capo</span><button class="f-print" type="button">Exporter cette feuille en PDF</button></div>
    <div class="f-cols"><div class="f-col"><h5>Les accords du jour</h5><div class="accords"><span class="accord" data-chord="F4"></span><span class="accord" data-chord="F"></span><span class="accord" data-chord="Bm"></span></div></div><div class="f-col"><h5>Les formes mobiles</h5><ul><li><b>Forme de Mi</b> barrée : case 1 = Fa, case 3 = Sol, case 5 = La, case 8 = Do.</li><li><b>Forme de La</b> barrée : case 2 = Si, case 3 = Do, case 5 = Ré.</li><li>Deux formes, tous les accords majeurs du manche.</li></ul><h5>Le capo</h5><ul><li>Capo case 2, tu joues <b>Sol</b> → on entend <b>La</b>.</li><li>Capo case 2, tu joues <b>Do</b> → on entend <b>Ré</b>.</li><li>Une case = un demi-ton.</li></ul></div><div class="f-col"><h5>À la maison</h5><div class="devoir"><b>1.</b> Barré case 5 uniquement, corde par corde. Deux minutes par jour, pas plus, c'est fatigant.<br><b>2.</b> Le Fa à quatre cordes dans un vrai morceau, dès cette semaine.<br><b>3.</b> Choisis ton morceau du cours 10. En entier, du début à la fin. Tu as deux séances.</div></div></div>
   </div>
  </div>
@@ -815,7 +836,7 @@ E|--0--0--0--0--0--0--0--|</pre><p class="cap">Même forme, on descend d'une cor
   <div class="s-pied"><div class="p-lab">Si ça ne se passe pas comme prévu</div><div class="p-body"><p><b>Adulte que l'impro angoisse :</b> n'emploie pas le mot. Dis « on va jouer ces trois notes-là, à l'endroit que tu veux ». Ça débloque à peu près tout le monde.</p><p><b>S'il veut jouer vite :</b> refuse, explique une fois, et montre-lui un trait rapide en fin d'heure pour le plaisir.</p></div></div>
   <div class="feuille">
    <div class="f-cut"><span>à détacher</span></div>
-   <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Cours 9 — la pentatonique de La mineur</span></div>
+   <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Cours 9 — la pentatonique de La mineur</span><button class="f-print" type="button">Exporter cette feuille en PDF</button></div>
    <div class="f-cols"><div class="f-col"><h5>La boîte, case 5</h5><pre class="tab">e|-------------------5--8--|
 B|----------------5--8-----|
 G|-----------5--7----------|
@@ -865,7 +886,7 @@ G|--5h7--|--7p5--|--7b(9)--|</pre><ul><li><b>h</b> : le doigt tombe sur la case,
   <div class="s-pied"><div class="p-lab">Si ça ne se passe pas comme prévu</div><div class="p-body"><p><b>Techniquement, ce qui manque :</b> le barré propre, trois mois. Les accords de septième et les mineurs septième. Le travis picking. Une deuxième position de pentatonique.</p><p><b>Musicalement :</b> se constituer un répertoire d'une dizaine de morceaux jouables de mémoire, n'importe où.</p><p><b>Le reste :</b> trouver quelqu'un avec qui jouer. Rien ne fait progresser un débutant aussi vite, et rien ne le fait tenir aussi longtemps.</p></div></div>
   <div class="feuille">
    <div class="f-cut"><span>à détacher</span></div>
-   <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Cours 10 — ton échauffement, à garder</span></div>
+   <div class="f-head"><span class="f-lab">Feuille élève</span><span class="f-t">Cours 10 — ton échauffement, à garder</span><button class="f-print" type="button">Exporter cette feuille en PDF</button></div>
    <div class="f-cols"><div class="f-col"><h5>Dix minutes, tous les jours</h5><pre class="tab">1. Chromatique — 2 min, au métronome
 
 e|-----------------------------|
@@ -958,6 +979,48 @@ E|--1--2--3--4--2--3--4--5-----|
     var slot=sec.querySelector('.m-val');
     if(slot) slot.textContent=m+' min';
   });
+})();
+</script>
+<script>
+(function () {
+  var caches_ = [];
+
+  function hideEverythingAround(el) {
+    var node = el;
+    while (node && node !== document.body) {
+      var kids = node.parentNode.children;
+      for (var i = 0; i < kids.length; i++) {
+        if (kids[i] !== node) { kids[i].classList.add('print-hidden'); caches_.push(kids[i]); }
+      }
+      node = node.parentNode;
+    }
+  }
+
+  function restore() {
+    for (var i = 0; i < caches_.length; i++) caches_[i].classList.remove('print-hidden');
+    caches_ = [];
+    document.documentElement.classList.remove('printing-sheet');
+  }
+
+  document.querySelectorAll('.f-print').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var feuille = btn.closest('.feuille');
+      if (!feuille) return;
+      restore();
+      hideEverythingAround(feuille);
+      document.documentElement.classList.add('printing-sheet');
+      window.print();
+    });
+  });
+
+  window.addEventListener('afterprint', restore);
+  // Safari iOS ne déclenche pas toujours afterprint : on surveille aussi le média
+  if (window.matchMedia) {
+    var mq = window.matchMedia('print');
+    var onChange = function (m) { if (!m.matches) restore(); };
+    if (mq.addEventListener) mq.addEventListener('change', onChange);
+    else if (mq.addListener) mq.addListener(onChange);
+  }
 })();
 </script>
 <script>
